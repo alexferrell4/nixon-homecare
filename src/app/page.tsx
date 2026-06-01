@@ -7,7 +7,6 @@ import About from "@/components/About";
 import WhyNixon from "@/components/WhyNixon";
 import Reviews from "@/components/Reviews";
 import Blog from "@/components/Blog";
-import PodcastSection from "@/components/PodcastSection";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -24,7 +23,6 @@ export default function Home() {
         <WhyNixon />
         <Reviews />
         <Blog />
-        <PodcastSection />
         <Contact />
       </main>
       <Footer />

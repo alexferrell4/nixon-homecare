@@ -10,7 +10,7 @@ const services = [
     icon: Home,
     title: "Assisted Living",
     shortDesc: "An assisted living facility is a senior living option for those with minimal needs for assistance with daily living and care.",
-    fullDesc: "Nixon Assisted Living unlike Nixon Adult Care is a for-profit entity accepting clients via private pay and approved medical insurance providers. Our skilled personal care attendants assist clients with performing activities of daily living which includes dressing, meal support, grooming, bathing, toileting, and self-administration of medications. We also provide physical rehabilitative services per physician orders such as movement, balance and flexibility exercises. Tours are available upon request. Please feel free to call for an appointment or additional information: 713-419-2653 or email: Nixon_homecareinc@msn.com",
+    fullDesc: "Nixon Assisted Living unlike Nixon Adult Day Care Center is a for-profit entity accepting clients via private pay and approved medical insurance providers. Our skilled personal care attendants assist clients with performing activities of daily living which includes dressing, meal support, grooming, bathing, toileting, and self-administration of medications. We also provide physical rehabilitative services per physician orders such as movement, balance and flexibility exercises. Tours are available upon request. Please feel free to call for an appointment or additional information: 713-419-2653 or email: Nixon_homecareinc@msn.com",
   },
   {
     id: "independent-living",
@@ -22,7 +22,7 @@ const services = [
   {
     id: "adult-day-care",
     icon: Sun,
-    title: "Adult Day Care",
+    title: "Adult Day Care Center",
     shortDesc: "Normally, adult day care is used to relieve the caregiver of his or her duties for the day while ensuring that the care recipient will receive quality care.",
     fullDesc: "We provide adult supervision and social activities including physical activities based on each client's physical and mental capabilities, weekly arts and crafts, games such as cards, checkers, bingo and dominoes, books and assistance with reading, weekly Bible study and community field trips as well as birthday and holiday celebrations.",
   },
