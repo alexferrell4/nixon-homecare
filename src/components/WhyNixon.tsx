@@ -21,7 +21,7 @@ export default function WhyNixon() {
               Why Consider Nixon?
             </h2>
             <p className="text-primary-foreground/80 text-lg leading-relaxed mb-8">
-              Debora Nixon explains why you should consider Nixon Home Care for your loved ones. With decades of experience and a genuine passion for caring, we provide a home away from home for those who need it most.
+              At Nixon Home Care, Inc., our mission is to enrich the lives of those we serve by offering compassionate, personalized care in supportive, home-like environments. We’ve created a continuum of alternative living options designed to meet each individual’s unique needs and preferences. Whether it’s assisted living, independent living, or adult day care, we are dedicated to helping every person feel safe, valued, and at home—wherever they choose to be. Visit our website to learn more about how we’re committed to your care and comfort.
             </p>
             
             <div className="flex flex-wrap gap-4">
@@ -43,17 +43,7 @@ export default function WhyNixon() {
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="aspect-video bg-primary-foreground/10 rounded-lg flex items-center justify-center relative overflow-hidden group cursor-pointer">
-              <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
-              <motion.button
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.95 }}
-                className="w-20 h-20 bg-accent rounded-full flex items-center justify-center relative z-10 shadow-xl"
-              >
-                <Play className="w-8 h-8 text-accent-foreground fill-current ml-1" />
-              </motion.button>
-              <p className="absolute bottom-6 left-6 text-sm font-medium">Watch Debora Nixon&apos;s Message</p>
-            </div>
+            
           </motion.div>
         </div>
       </div>
