@@ -56,7 +56,7 @@ export default function AdditionalServices() {
                 {service.description}
               </p>
 
-              {/* ✅ ONLY CHANGE: Donate button added */}
+              {/* Donate button added */}
               {service.title === "Donate to Nixon Home Care" && (
                 <div className="mt-6">
                   <a

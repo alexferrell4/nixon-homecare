@@ -98,7 +98,6 @@ export default function Reviews() {
               </div>
               <div>
                 <p className="font-bold text-2xl text-foreground">4.9</p>
-                <p className="text-sm text-muted-foreground">Based on 8 Google reviews</p>
               </div>
             </div>
             <p className="text-sm text-muted-foreground">powered by Google</p>

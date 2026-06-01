@@ -55,7 +55,7 @@ export default function Contact() {
           </p>
         </motion.div>
 
-        {/* ✅ ONLY CHANGE: spacing adjusted (removed -mt-2 and tightened spacing) */}
+        {/* Contact Form*/}
         <div className="text-center mb-10">
           <a
             href="https://form.jotform.com/261345855942061"
