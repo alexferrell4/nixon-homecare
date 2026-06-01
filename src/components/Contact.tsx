@@ -42,8 +42,8 @@ export default function Contact() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <p className="text-primary font-medium mb-4 tracking-wide uppercase text-sm">Get In Touch</p>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground font-[var(--font-playfair)] mb-6 text-balance">
+          <p className="text-accent font-medium mb-4 tracking-widest uppercase text-sm">Get In Touch</p>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-normal text-foreground font-serif mb-6 text-balance">
             Contact Us
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -58,8 +58,8 @@ export default function Contact() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <div className="bg-card rounded-3xl border border-border p-8">
-              <h3 className="text-2xl font-bold text-foreground mb-2">Make Inquiry</h3>
+            <div className="bg-card rounded-lg border border-border p-8">
+              <h3 className="text-2xl font-normal text-foreground font-serif mb-2">Make Inquiry</h3>
               <p className="text-muted-foreground mb-8">
                 If you have any questions or would like more information, our advisers will be happy to help.
               </p>
@@ -75,7 +75,7 @@ export default function Contact() {
                       required
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      className="w-full px-4 py-3 bg-background border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+                      className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent/50 transition-all"
                     />
                   </div>
                   <div>
@@ -87,7 +87,7 @@ export default function Contact() {
                       required
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="w-full px-4 py-3 bg-background border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+                      className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent/50 transition-all"
                     />
                   </div>
                 </div>
@@ -100,7 +100,7 @@ export default function Contact() {
                     type="text"
                     value={formData.subject}
                     onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                    className="w-full px-4 py-3 bg-background border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+                    className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent/50 transition-all"
                   />
                 </div>
 
@@ -120,7 +120,7 @@ export default function Contact() {
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                   type="submit"
-                  className="w-full flex items-center justify-center gap-2 px-6 py-4 bg-primary text-primary-foreground rounded-full font-medium hover:bg-primary/90 transition-colors"
+                  className="w-full flex items-center justify-center gap-2 px-6 py-4 bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition-colors"
                 >
                   <Send className="w-4 h-4" />
                   Submit

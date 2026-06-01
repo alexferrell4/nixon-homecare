@@ -16,8 +16,8 @@ export default function WhyNixon() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <p className="text-accent font-medium mb-4 tracking-wide uppercase text-sm">Why Choose Us</p>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-[var(--font-playfair)] mb-8 text-balance">
+            <p className="text-accent font-medium mb-4 tracking-widest uppercase text-sm">Why Choose Us</p>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-normal font-serif mb-8 text-balance">
               Why Consider Nixon?
             </h2>
             <p className="text-primary-foreground/80 text-lg leading-relaxed mb-8">
@@ -43,7 +43,7 @@ export default function WhyNixon() {
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="aspect-video bg-primary-foreground/10 rounded-3xl flex items-center justify-center relative overflow-hidden group cursor-pointer">
+            <div className="aspect-video bg-primary-foreground/10 rounded-lg flex items-center justify-center relative overflow-hidden group cursor-pointer">
               <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
               <motion.button
                 whileHover={{ scale: 1.1 }}

@@ -38,10 +38,10 @@ export default function AdditionalServices() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="bg-card p-8 rounded-3xl border border-border hover:shadow-lg transition-shadow group"
+              className="bg-card p-8 rounded-lg border border-border hover:shadow-lg transition-shadow group"
             >
-              <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:scale-105 transition-all">
-                <service.icon className="w-7 h-7 text-primary group-hover:text-primary-foreground transition-colors" />
+              <div className="w-14 h-14 bg-accent/20 rounded-lg flex items-center justify-center mb-6 group-hover:bg-accent group-hover:scale-105 transition-all">
+                <service.icon className="w-7 h-7 text-accent group-hover:text-white transition-colors" />
               </div>
               <h3 className="text-xl font-semibold text-foreground mb-4">{service.title}</h3>
               <p className="text-muted-foreground leading-relaxed">{service.description}</p>

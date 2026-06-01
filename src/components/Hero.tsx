@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
       {/* Background Pattern */}
-      <div className="absolute inset-0 bg-gradient-to-b from-secondary/50 to-background" />
+      <div className="absolute inset-0 bg-gradient-to-b from-secondary to-background" />
       
       <div className="relative z-10 max-w-7xl mx-auto px-6 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -21,12 +21,12 @@ export default function Hero() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
-              className="text-primary font-medium mb-4 tracking-wide uppercase text-sm"
+              className="text-accent font-medium mb-4 tracking-widest uppercase text-sm"
             >
-              Compassionate Care in Houston
+              Senior Living in Houston
             </motion.p>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6 font-[var(--font-playfair)] text-balance">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-normal text-foreground leading-tight mb-6 font-serif text-balance">
               Helping Texans and their families live better lives
             </h1>
             
@@ -39,7 +39,7 @@ export default function Hero() {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 href="#contact"
-                className="px-8 py-4 bg-primary text-primary-foreground rounded-full font-medium hover:bg-primary/90 transition-colors text-center"
+                className="px-8 py-4 bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition-colors text-center"
               >
                 Book a Consultation
               </motion.a>
@@ -47,7 +47,7 @@ export default function Hero() {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 href="#services"
-                className="px-8 py-4 border-2 border-primary text-primary rounded-full font-medium hover:bg-primary hover:text-primary-foreground transition-colors text-center"
+                className="px-8 py-4 border border-primary text-primary font-medium hover:bg-primary hover:text-primary-foreground transition-colors text-center"
               >
                 Our Services
               </motion.a>
@@ -58,7 +58,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6 }}
-              className="mt-10 inline-flex items-center gap-4 bg-card px-6 py-4 rounded-2xl shadow-lg border border-border"
+              className="mt-10 inline-flex items-center gap-4 bg-card px-6 py-4 shadow-lg border border-border"
             >
               <div className="flex items-center gap-1">
                 {[...Array(5)].map((_, i) => (
@@ -81,29 +81,29 @@ export default function Hero() {
           >
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-4">
-                <div className="h-48 bg-primary/10 rounded-3xl flex items-center justify-center overflow-hidden">
+                <div className="h-48 bg-primary/10 rounded-lg flex items-center justify-center overflow-hidden">
                   <div className="text-center p-6">
-                    <p className="text-5xl font-bold text-primary font-[var(--font-playfair)]">25+</p>
+                    <p className="text-5xl font-normal text-primary font-serif">25+</p>
                     <p className="text-sm text-muted-foreground mt-1">Years of Service</p>
                   </div>
                 </div>
-                <div className="h-64 bg-accent/20 rounded-3xl flex items-center justify-center overflow-hidden">
+                <div className="h-64 bg-accent/20 rounded-lg flex items-center justify-center overflow-hidden">
                   <div className="text-center p-6">
-                    <p className="text-4xl font-bold text-foreground font-[var(--font-playfair)]">1,729</p>
+                    <p className="text-4xl font-normal text-foreground font-serif">1,729</p>
                     <p className="text-sm text-muted-foreground mt-1">Square Miles Served in Harris County</p>
                   </div>
                 </div>
               </div>
               <div className="space-y-4 pt-8">
-                <div className="h-64 bg-secondary rounded-3xl flex items-center justify-center overflow-hidden">
+                <div className="h-64 bg-secondary rounded-lg flex items-center justify-center overflow-hidden border border-border">
                   <div className="text-center p-6">
-                    <p className="text-5xl font-bold text-primary font-[var(--font-playfair)]">7</p>
+                    <p className="text-5xl font-normal text-primary font-serif">7</p>
                     <p className="text-sm text-muted-foreground mt-1">Van Fleet for Transportation</p>
                   </div>
                 </div>
-                <div className="h-48 bg-primary rounded-3xl flex items-center justify-center overflow-hidden">
+                <div className="h-48 bg-primary rounded-lg flex items-center justify-center overflow-hidden">
                   <div className="text-center p-6">
-                    <p className="text-4xl font-bold text-primary-foreground font-[var(--font-playfair)]">2</p>
+                    <p className="text-4xl font-normal text-primary-foreground font-serif">2</p>
                     <p className="text-sm text-primary-foreground/80 mt-1">Locations in Texas</p>
                   </div>
                 </div>

@@ -6,24 +6,26 @@ import { Menu, X, Phone } from "lucide-react";
 import Link from "next/link";
 
 const navLinks = [
-  { label: "Assisted Living", href: "#assisted-living" },
-  { label: "Independent Living", href: "#independent-living" },
-  { label: "Adult Day Care", href: "#adult-day-care" },
-  { label: "About", href: "#about" },
-  { label: "Reviews", href: "#reviews" },
-  { label: "Contact", href: "#contact" },
+  { label: "ABOUT", href: "#about" },
+  { label: "RESIDENCES", href: "#services" },
+  { label: "AMENITIES", href: "#additional-services" },
+  { label: "FLOOR PLANS", href: "#why-nixon" },
+  { label: "CONTACT", href: "#contact" },
 ];
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-primary">
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-2">
-            <span className="text-2xl font-bold text-primary font-[var(--font-playfair)]">
-              Nixon Home Care
+          <Link href="/" className="flex items-center gap-3">
+            <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
+              <span className="text-primary font-bold text-lg">N</span>
+            </div>
+            <span className="text-xl font-semibold text-white font-serif">
+              Nixon Estate Senior Living
             </span>
           </Link>
 
@@ -33,7 +35,7 @@ export default function Header() {
               <Link
                 key={link.label}
                 href={link.href}
-                className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
+                className="text-sm font-medium text-white/90 hover:text-accent tracking-wide transition-colors"
               >
                 {link.label}
               </Link>
@@ -42,18 +44,24 @@ export default function Header() {
 
           <div className="hidden lg:flex items-center gap-4">
             <a
-              href="tel:713-633-4700"
-              className="flex items-center gap-2 px-5 py-2.5 bg-primary text-primary-foreground rounded-full text-sm font-medium hover:bg-primary/90 transition-colors"
+              href="tel:713-419-2653"
+              className="flex items-center gap-2 text-white/90 hover:text-accent transition-colors"
             >
               <Phone className="w-4 h-4" />
-              713-633-4700
+              <span className="font-medium">(713) 419-2653</span>
+            </a>
+            <a
+              href="#contact"
+              className="flex items-center gap-2 px-5 py-2.5 border border-white/30 text-white rounded-sm text-sm font-medium hover:bg-white hover:text-primary transition-colors"
+            >
+              RESIDENT PORTAL
             </a>
           </div>
 
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden p-2 text-foreground"
+            className="lg:hidden p-2 text-white"
             aria-label="Toggle menu"
           >
             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -68,7 +76,7 @@ export default function Header() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden bg-background border-t border-border"
+            className="lg:hidden bg-primary border-t border-white/10"
           >
             <nav className="flex flex-col px-6 py-4">
               {navLinks.map((link) => (
@@ -76,17 +84,17 @@ export default function Header() {
                   key={link.label}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="py-3 text-foreground/80 hover:text-primary transition-colors border-b border-border last:border-0"
+                  className="py-3 text-white/90 hover:text-accent transition-colors border-b border-white/10 last:border-0"
                 >
                   {link.label}
                 </Link>
               ))}
               <a
-                href="tel:713-633-4700"
-                className="mt-4 flex items-center justify-center gap-2 px-5 py-3 bg-primary text-primary-foreground rounded-full text-sm font-medium"
+                href="tel:713-419-2653"
+                className="mt-4 flex items-center justify-center gap-2 px-5 py-3 border border-white/30 text-white rounded-sm text-sm font-medium"
               >
                 <Phone className="w-4 h-4" />
-                713-633-4700
+                (713) 419-2653
               </a>
             </nav>
           </motion.div>

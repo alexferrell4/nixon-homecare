@@ -36,8 +36,8 @@ export default function Blog() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <p className="text-primary font-medium mb-4 tracking-wide uppercase text-sm">Latest News</p>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground font-[var(--font-playfair)] mb-6 text-balance">
+          <p className="text-accent font-medium mb-4 tracking-widest uppercase text-sm">Latest News</p>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-normal text-foreground font-serif mb-6 text-balance">
             Latest Blog Posts
           </h2>
         </motion.div>
@@ -50,19 +50,19 @@ export default function Blog() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="group bg-card border border-border rounded-3xl p-8 hover:shadow-lg transition-all cursor-pointer"
+              className="group bg-card border border-border rounded-lg p-8 hover:shadow-lg transition-all cursor-pointer"
             >
               <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
                 <Calendar className="w-4 h-4" />
                 {post.date}
               </div>
-              <h3 className="text-xl font-semibold text-foreground mb-4 group-hover:text-primary transition-colors leading-tight">
+              <h3 className="text-xl font-semibold text-foreground mb-4 group-hover:text-accent transition-colors leading-tight">
                 {post.title}
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-6">
                 {post.excerpt}
               </p>
-              <div className="flex items-center gap-2 text-primary font-medium">
+              <div className="flex items-center gap-2 text-accent font-medium">
                 Read More
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </div>

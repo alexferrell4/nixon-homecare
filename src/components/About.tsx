@@ -12,8 +12,8 @@ export default function About() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <p className="text-primary font-medium mb-4 tracking-wide uppercase text-sm">About Us</p>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground font-[var(--font-playfair)] mb-8 text-balance">
+            <p className="text-accent font-medium mb-4 tracking-widest uppercase text-sm">About Us</p>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-normal text-foreground font-serif mb-8 text-balance">
               About Nixon Home Care, Inc.
             </h2>
             
@@ -30,7 +30,7 @@ export default function About() {
               <p>
                 From inception, Debora Nixon vigorously pursued addressing the gap in services for quality adult daycare services for impaired adults while their caregivers work. Especially low-income individuals eligible for Medicare or Medicaid.
               </p>
-              <p className="text-lg font-semibold text-primary">
+              <p className="text-lg font-semibold text-accent">
                 Take action today, our doors are always open.
               </p>
             </div>
@@ -42,8 +42,8 @@ export default function About() {
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="bg-secondary rounded-3xl p-8 lg:p-12">
-              <h3 className="text-2xl font-bold text-foreground font-[var(--font-playfair)] mb-6">Our Mission</h3>
+            <div className="bg-secondary rounded-lg p-8 lg:p-12">
+              <h3 className="text-2xl font-normal text-foreground font-serif mb-6">Our Mission</h3>
               <p className="text-muted-foreground leading-relaxed mb-6">
                 {"At Nixon Home Care, Inc., our mission is to enrich the lives of those we serve by offering compassionate, personalized care in supportive, home-like environments."}
               </p>
@@ -56,17 +56,17 @@ export default function About() {
             </div>
 
             {/* Business Structure Note */}
-            <div className="mt-8 bg-primary/5 border border-primary/20 rounded-2xl p-6">
+            <div className="mt-8 bg-accent/10 border border-accent/20 rounded-lg p-6">
               <p className="text-sm font-medium text-foreground mb-3">
                 Nixon Home Care Inc. has a dual business structure:
               </p>
               <div className="grid sm:grid-cols-2 gap-4 text-sm">
                 <div>
-                  <p className="font-semibold text-primary mb-1">For Profit Entities:</p>
+                  <p className="font-semibold text-accent mb-1">For Profit Entities:</p>
                   <p className="text-muted-foreground">Nixon Assisted Living & Nixon Independent Living</p>
                 </div>
                 <div>
-                  <p className="font-semibold text-primary mb-1">Non-Profit 501 C3 Entities:</p>
+                  <p className="font-semibold text-accent mb-1">Non-Profit 501 C3 Entities:</p>
                   <p className="text-muted-foreground">Nixon Adult Day Care of Houston & Shepherd Texas</p>
                 </div>
               </div>

@@ -40,8 +40,8 @@ export default function Services() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <p className="text-primary font-medium mb-4 tracking-wide uppercase text-sm">What We Offer</p>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground font-[var(--font-playfair)] mb-6 text-balance">
+          <p className="text-accent font-medium mb-4 tracking-widest uppercase text-sm">What We Offer</p>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-normal text-foreground font-serif mb-6 text-balance">
             Our Services
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
@@ -58,26 +58,26 @@ export default function Services() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="border border-border rounded-2xl overflow-hidden bg-card"
+              className="border border-border rounded-lg overflow-hidden bg-card"
             >
               <button
                 onClick={() => setExpandedId(expandedId === service.id ? null : service.id)}
                 className="w-full px-6 py-6 flex items-center justify-between text-left hover:bg-secondary/50 transition-colors"
               >
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
-                    <service.icon className="w-6 h-6 text-primary" />
+                  <div className="w-12 h-12 bg-accent/20 rounded-lg flex items-center justify-center">
+                    <service.icon className="w-6 h-6 text-accent" />
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-foreground">{service.title}</h3>
                     <p className="text-muted-foreground text-sm mt-1 hidden sm:block">{service.shortDesc}</p>
                   </div>
                 </div>
-                <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                <div className="w-10 h-10 bg-accent/20 rounded-full flex items-center justify-center flex-shrink-0">
                   {expandedId === service.id ? (
-                    <Minus className="w-5 h-5 text-primary" />
+                    <Minus className="w-5 h-5 text-accent" />
                   ) : (
-                    <Plus className="w-5 h-5 text-primary" />
+                    <Plus className="w-5 h-5 text-accent" />
                   )}
                 </div>
               </button>
