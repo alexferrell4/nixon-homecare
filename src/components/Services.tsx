@@ -24,7 +24,7 @@ const services = [
     icon: Sun,
     title: "Adult Day Care Center",
     shortDesc: "Normally, adult day care is used to relieve the caregiver of his or her duties for the day while ensuring that the care recipient will receive quality care.",
-    fullDesc: "We provide adult supervision and social activities including physical activities based on each client's physical and mental capabilities, weekly arts and crafts, games such as cards, checkers, bingo and dominoes, books and assistance with reading, weekly Bible study and community field trips as well as birthday and holiday celebrations.",
+    fullDesc: "Open Monday-Friday from 7:00 Am to 5:00 Pm and Closed on weekends, we provide adult supervision and social activities including physical activities based on each client's physical and mental capabilities, weekly arts and crafts, games such as cards, checkers, bingo and dominoes, books and assistance with reading, weekly Bible study and community field trips as well as birthday and holiday celebrations.",
   },
 ];
 
