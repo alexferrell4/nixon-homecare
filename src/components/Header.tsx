@@ -6,11 +6,12 @@ import { Menu, X, Phone } from "lucide-react";
 import Link from "next/link";
 
 const navLinks = [
-  { label: "ABOUT", href: "#about" },
-  { label: "RESIDENCES", href: "#services" },
-  { label: "AMENITIES", href: "#additional-services" },
-  { label: "FLOOR PLANS", href: "#why-nixon" },
-  { label: "CONTACT", href: "#contact" },
+  { label: "Assisted Living", href: "#services" },
+  { label: "Independent Living", href: "#services" },
+  { label: "Adult Day Care", href: "#services" },
+  { label: "About", href: "#about" },
+  { label: "Reviews", href: "#reviews" },
+  { label: "Contact", href: "#contact" },
 ];
 
 export default function Header() {
@@ -25,7 +26,7 @@ export default function Header() {
               <span className="text-primary font-bold text-lg">N</span>
             </div>
             <span className="text-xl font-semibold text-white font-serif">
-              Nixon Estate Senior Living
+              Nixon Home Care
             </span>
           </Link>
 
@@ -44,17 +45,17 @@ export default function Header() {
 
           <div className="hidden lg:flex items-center gap-4">
             <a
-              href="tel:713-419-2653"
+              href="tel:713-633-4700"
               className="flex items-center gap-2 text-white/90 hover:text-accent transition-colors"
             >
               <Phone className="w-4 h-4" />
-              <span className="font-medium">(713) 419-2653</span>
+              <span className="font-medium">(713) 633-4700</span>
             </a>
             <a
               href="#contact"
               className="flex items-center gap-2 px-5 py-2.5 border border-white/30 text-white rounded-sm text-sm font-medium hover:bg-white hover:text-primary transition-colors"
             >
-              RESIDENT PORTAL
+              Contact Us
             </a>
           </div>
 
@@ -90,11 +91,11 @@ export default function Header() {
                 </Link>
               ))}
               <a
-                href="tel:713-419-2653"
+                href="tel:713-633-4700"
                 className="mt-4 flex items-center justify-center gap-2 px-5 py-3 border border-white/30 text-white rounded-sm text-sm font-medium"
               >
                 <Phone className="w-4 h-4" />
-                (713) 419-2653
+                (713) 633-4700
               </a>
             </nav>
           </motion.div>
