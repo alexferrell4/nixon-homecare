@@ -62,10 +62,7 @@ export default function Blog() {
               <p className="text-muted-foreground leading-relaxed mb-6">
                 {post.excerpt}
               </p>
-              <div className="flex items-center gap-2 text-accent font-medium">
-                Read More
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </div>
+              
             </motion.article>
           ))}
         </div>
