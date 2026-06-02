@@ -6,22 +6,22 @@ import { Calendar, ArrowRight } from "lucide-react";
 const blogPosts = [
   {
     title: "The Importance of Self-Care for Seniors: How Adult Day Care and Home Care Support Healthy Living",
-    excerpt: "Prioritizing Self-Care at Every Stage of Life Self-care is more than relaxation or taking a break — it is an essential part of maintaining overall well-being...",
+    excerpt: "Prioritizing Self-Care at Every Stage of Life Self-care is more than relaxation or taking a break — it is an essential part of maintaining overall well-being.",
     date: "May 7, 2026",
   },
   {
     title: "What to Do When Living at Home Is No Longer a Safe Option for Your Loved One",
-    excerpt: "Caring for an aging parent or loved one is one of the most meaningful responsibilities you can undertake. But there comes a time when difficult decisions must be made...",
+    excerpt: "Caring for an aging parent or loved one is one of the most meaningful responsibilities you can undertake. But there comes a time when difficult decisions must be made.",
     date: "April 22, 2025",
   },
   {
     title: "Feeling Great Inside and Out: A Guide for World Health Day From Nixon Home Care",
-    excerpt: "Happy World Health Day from all of us at Nixon Home Care! Today, we want to chat about health—not just physical health, but holistic wellness...",
+    excerpt: "Happy World Health Day from all of us at Nixon Home Care! Today, we want to chat about health—not just physical health, but holistic wellness.",
     date: "April 7, 2024",
   },
   {
     title: "Celebrating Black History Month: A Tribute to Excellence and Resilience",
-    excerpt: "Nixon Home Care is honoring the Legacy and Achievements of African Americans. February marks Black History Month, a period dedicated to recognizing contributions...",
+    excerpt: "Nixon Home Care is honoring the Legacy and Achievements of African Americans.",
     date: "February 6, 2024",
   },
 ];
