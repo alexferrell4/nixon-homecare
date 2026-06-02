@@ -55,7 +55,7 @@ export default function Hero() {
                 href="#contact"
                 className="px-8 py-4 bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition-colors text-center"
               >
-                Book a Consultation
+                Contact Us
               </motion.a>
 
               <motion.a
