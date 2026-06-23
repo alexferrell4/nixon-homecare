@@ -51,7 +51,8 @@ export default function Contact() {
           </h2>
 
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            If you are looking to bring your loved one into our community, please download the admission forms below.
+            If you are looking to bring your loved one into our community, please print out the admission packets below and fill them out. Once they are filled out,
+            either bring them in person, email them, or fax them to us. If you have any questions or would like more information, call us at our number or send an email.
           </p>
         </motion.div>
 
