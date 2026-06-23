@@ -102,11 +102,11 @@ export default function Footer() {
             <div className="space-y-3 text-background/60">
               <p>3719 Lynnfield Street Houston, TX 77016</p>
               <p>Tel: <a href="tel:713-633-4700" className="hover:text-accent transition-colors">713-633-4700</a></p>
-              <p>Email: Nixon_homecareinc@msn.com</p>
+              <p>Email: Nixon_homecare@msn.com</p>
             </div>
             <div className="flex gap-4 mt-6">
               <a
-                href="#"
+                href="https://www.facebook.com/search/top?q=nixon%20home%20care%2C%20inc"
                 className="w-10 h-10 bg-background/10 rounded-full flex items-center justify-center hover:bg-accent hover:text-accent-foreground transition-colors"
                 aria-label="Facebook"
               >
@@ -115,7 +115,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/nixonhomecare/"
                 className="w-10 h-10 bg-background/10 rounded-full flex items-center justify-center hover:bg-accent hover:text-accent-foreground transition-colors"
                 aria-label="Instagram"
               >

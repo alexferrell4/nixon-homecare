@@ -51,19 +51,30 @@ export default function Contact() {
           </h2>
 
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            TO BOOK A CONSULTATION WITH ONE OF OUR DEDICATED STAFF AND TO SEE HOW WE CAN PROVIDE HELP TO YOU OR YOUR LOVED ONES, PLEASE CONTACT US. OR IF YOU ARE LOOKING TO CONTACT US ABOUT POTENTIAL EMPLOYMENT. CLICK THE BUTTON BELOW.
+            If you are looking to bring your loved one into our community, please download the admission forms below.
           </p>
         </motion.div>
 
         {/* Contact Form*/}
         <div className="text-center mb-10">
           <a
-            href="https://form.jotform.com/261345855942061"
+            href="https://drive.google.com/file/d/1qIRlPRtHSBgWm94oyCBkV5N_7fLka678/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary/90 transition-colors"
           >
-            EMPLOYMENT APPLICATION!
+            NIXON ADULT DAY CENTER ADMISSION INQUIRY!
+          </a>
+        </div>
+
+        <div className="text-center mb-10">
+          <a
+            href="https://drive.google.com/file/d/1ql8l8hXfPhh1h6goCcekrx6HStkyljfN/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary/90 transition-colors"
+          >
+            NIXON ASSISTED LIVING ADMISSION INQUIRY!
           </a>
         </div>
 
@@ -76,22 +87,23 @@ export default function Contact() {
           >
             <div className="bg-card rounded-lg border border-border p-8">
               <h3 className="text-2xl font-normal text-foreground font-serif mb-2">
-                Make Inquiry
+                Apply for a position now!
               </h3>
 
               <p className="text-muted-foreground mb-8">
-                If you have any questions or would like more information, our advisers will be happy to help.
+                If you have any questions or would like more information, call us at our number or send an email. Our staff will be happy to help.
               </p>
 
-              <div className="w-full h-[900px] rounded-lg overflow-hidden">
-                <iframe
-                  src="https://form.jotform.com/261453718088060"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                />
-              </div>
+<div className="w-full h-[900px] rounded-lg overflow-hidden">
+  <iframe
+    src="https://form.jotform.com/261345855942061"
+    width="100%"
+    height="100%"
+    style={{ border: 0 }}
+    allowFullScreen
+  />
+</div>
+              
             </div>
           </motion.div>
 
