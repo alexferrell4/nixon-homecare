@@ -21,7 +21,7 @@ export default function Hero() {
       {/* Dark Overlay */}
       <div className="absolute inset-0 z-10 bg-black/50" />
 
-      {/* Content */}
+      {/* Content //Enjoy a vibrant life of wellness and healthy longevity for your loved ones*/}
       <div className="relative z-20 max-w-7xl mx-auto px-6 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           
@@ -45,9 +45,10 @@ export default function Hero() {
             </h1>
 
             <p className="text-lg md:text-xl text-white/80 mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-              Enjoy a vibrant life of wellness and healthy longevity for your loved ones.
+             
+              !Nixon Adult Day Care Center will be closed on July 4th, 2024 in observance of Independence Day. We will resume normal business hours on July 6th, 2026!
             </p>
-
+ 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <motion.a
                 whileHover={{ scale: 1.02 }}
@@ -127,6 +128,14 @@ export default function Hero() {
                     <p className="text-sm text-white/70 mt-1">Locations in Texas</p>
                   </div>
                 </div>
+
+                <div className="bg-white/10 rounded-lg overflow-hidden backdrop-blur relative">
+  <img
+    src="/your-image.png"
+    alt="Locations"
+    className="w-full h-auto object-contain"
+  />
+</div>
               </div>
             </div>
           </motion.div>

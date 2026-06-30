@@ -57,7 +57,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <Link href="/" className="text-2xl font-bold font-[var(--font-playfair)] text-background">
-              Nixon Home Care
+              Nixon Home Care, Inc.
             </Link>
             <p className="text-background/60 mt-4 leading-relaxed">
               Helping Texans and their families live better lives through compassionate care and personalized living options.
