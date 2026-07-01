@@ -46,7 +46,7 @@ export default function Hero() {
 
             <p className="text-lg md:text-xl text-white/80 mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed">
              
-              !Nixon Adult Day Care Center will be closed on July 3th, 2026 in observance of Independence Day. We will resume normal business hours on July 6th, 2026!
+              !Nixon Adult Day Care Center will be closed on July 3rd, 2026 in observance of Independence Day. We will resume normal business hours on July 6th, 2026!
             </p>
  
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
