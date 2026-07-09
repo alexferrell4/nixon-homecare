@@ -26,7 +26,7 @@ export default function Header() {
               <span className="text-primary font-bold text-lg">N</span>
             </div>
             <span className="text-xl font-semibold text-white font-serif">
-              Nixon Home Care
+              Nixon Home Care, Inc.
             </span>
           </Link>
 
