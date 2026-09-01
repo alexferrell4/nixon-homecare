@@ -93,6 +93,16 @@ export default function Footer() {
                   Privacy Policy
                 </Link>
               </li>
+              <li>
+                <Link href="/legal/sms" className="text-background/60 hover:text-accent transition-colors">
+                  SMS Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link href="/legal/sms-terms" className="text-background/60 hover:text-accent transition-colors">
+                  SMS Terms &amp; Conditions
+                </Link>
+              </li>
             </ul>
           </div>
 
