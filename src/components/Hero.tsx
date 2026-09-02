@@ -128,16 +128,6 @@ export default function Hero() {
                     <p className="text-sm text-white/70 mt-1">Locations in Texas</p>
                   </div>
                 </div>
-
-             <div className="bg-white/10 rounded-lg overflow-hidden backdrop-blur relative">
-  <img
-    src="/your-image.png"
-    alt="Locations"
-    className="w-full h-auto object-contain"
-  />
-</div>
-
-
               </div>
             </div>
           </motion.div>
