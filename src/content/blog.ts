@@ -28,6 +28,8 @@ export type BlogPost = {
   cover?: string;
   /** Body paragraphs, rendered in order */
   body: string[];
+  /** Optional full-size image (e.g. an event flyer), shown uncropped */
+  flyer?: BlogImage;
   /** Optional photo carousel */
   gallery?: BlogImage[];
   /** Optional embedded video */
@@ -36,9 +38,30 @@ export type BlogPost = {
 
 export const posts: BlogPost[] = [
   {
+    slug: "compudopt-computer-giveaway",
+    title: "Free Computers for the Community: Nixon Home Care Partners with Compudopt",
+    date: "2026-09-10",
+    author: "Nixon Home Care",
+    excerpt:
+      "Join us Thursday, September 17 for a Community Computer Giveaway with Compudopt — free computers for eligible neighbors, followed by a free 10-week digital literacy class.",
+    cover: "/blog/compudopt-computer-giveaway/cover.jpg",
+    body: [
+      "Nixon Home Care is teaming up with Compudopt, a Houston nonprofit working to bridge the digital divide, for a Community Computer Giveaway. The goal is simple: help our neighbors get connected, with the tools and the know-how to make it count.",
+      "The giveaway is Thursday, September 17, 2026, from 10:00 a.m. to 12:00 p.m. at 6803 Bleker St., Houston, TX 77019. Free computers will be available for eligible community members.",
+      "Compudopt provides free computers and technology education to families across Houston, generally serving households that don't already have a working computer at home. Visit compudopt.org/houston for current eligibility details and to register.",
+      "It doesn't stop with the hardware. Beginning the following Wednesday, Compudopt will host a free 10-week Computer and Digital Literacy class — every Wednesday from 10:00 a.m. to 12:00 p.m. at 6800 Bleker St., Houston, TX 77016. The class covers the real skills that turn a computer into an opportunity.",
+      "More than just computers: real skills, bigger opportunities, and a stronger community. To learn more, call Nixon Home Care at (713) 633-4700 or email Nixon_homecare@msn.com.",
+      "The full flyer is below — please share it with anyone who could use it.",
+    ],
+    flyer: {
+      src: "/blog/compudopt-computer-giveaway/flyer.jpg",
+      alt: "Nixon Home Care and Compudopt Community Computer Giveaway flyer: Thursday 9/17/26, 10 a.m. to 12 p.m., 6803 Bleker St., Houston, TX 77019. Free computers for eligible community members, followed by a free 10-week digital literacy class every Wednesday at 6800 Bleker St., Houston, TX 77016.",
+    },
+  },
+  {
     slug: "nixon-26th-birthday-brunch",
     title: "Celebrating 26 Years: The Nixon Home Care Birthday Brunch",
-    date: "2026-09-10",
+    date: "2026-09-08",
     author: "Nixon Home Care",
     excerpt:
       "On August 29, family, staff, supporters, and friends gathered in a Houston ballroom to mark 26 years of Nixon Home Care — with proclamations, live music, and a fund-a-need for the centers.",
@@ -143,7 +166,7 @@ export const posts: BlogPost[] = [
   {
     slug: "welcome-to-the-nixon-blog",
     title: "Welcome to the Nixon Home Care Blog",
-    date: "2026-09-10",
+    date: "2026-09-02",
     author: "Nixon Home Care",
     excerpt:
       "We're starting a place to keep our families updated on what's happening at Nixon — events, milestones, photos, and news from our centers.",
@@ -157,7 +180,7 @@ export const posts: BlogPost[] = [
   {
     slug: "a-day-at-the-center",
     title: "A Day at the Nixon Adult Day Center",
-    date: "2026-09-09",
+    date: "2026-09-05",
     author: "Nixon Home Care",
     excerpt:
       "From the morning van route to the afternoon ride home, here is what a typical day looks like for the adults we care for at our Houston and Shepherd centers.",
@@ -177,7 +200,9 @@ export const posts: BlogPost[] = [
 ];
 
 export function getAllPosts(): BlogPost[] {
-  return [...posts].sort((a, b) => (a.date < b.date ? 1 : -1));
+  // Newest first. Sort is stable, so posts sharing a date keep their order
+  // in the `posts` array above.
+  return [...posts].sort((a, b) => b.date.localeCompare(a.date));
 }
 
 export function getPost(slug: string): BlogPost | undefined {

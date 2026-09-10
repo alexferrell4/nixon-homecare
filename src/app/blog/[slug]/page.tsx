@@ -83,6 +83,24 @@ export default async function BlogPostPage({
             ))}
           </div>
 
+          {post.flyer ? (
+            <figure className="mt-12">
+              <Image
+                src={post.flyer.src}
+                alt={post.flyer.alt}
+                width={1000}
+                height={1500}
+                sizes="(max-width: 640px) 100vw, 640px"
+                className="mx-auto h-auto w-full max-w-xl rounded-lg border border-border"
+              />
+              {post.flyer.caption ? (
+                <figcaption className="mt-3 text-center text-sm text-muted-foreground">
+                  {post.flyer.caption}
+                </figcaption>
+              ) : null}
+            </figure>
+          ) : null}
+
           {post.gallery && post.gallery.length > 0 ? (
             <section className="mt-12" aria-label="Photos">
               <h2 className="mb-4 text-sm font-medium uppercase tracking-widest text-accent">
