@@ -18,8 +18,8 @@ export default function Home() {
         <Hero />
         <Marquee />
         <Services />
-        <BlogPreview />
         <AdditionalServices />
+        <BlogPreview />
         <About />
         <WhyNixon />
         <Reviews />
