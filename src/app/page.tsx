@@ -2,11 +2,11 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Marquee from "@/components/Marquee";
 import Services from "@/components/Services";
+import BlogPreview from "@/components/BlogPreview";
 import AdditionalServices from "@/components/AdditionalServices";
 import About from "@/components/About";
 import WhyNixon from "@/components/WhyNixon";
 import Reviews from "@/components/Reviews";
-import Blog from "@/components/Blog";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -18,11 +18,11 @@ export default function Home() {
         <Hero />
         <Marquee />
         <Services />
+        <BlogPreview />
         <AdditionalServices />
         <About />
         <WhyNixon />
         <Reviews />
-        <Blog />
         <Contact />
       </main>
       <Footer />
