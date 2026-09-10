@@ -79,3 +79,12 @@ html {
   overflow: hidden;
   transition: max-height 0.3s ease-out;
 }
+
+/* Hide scrollbar for the photo carousel while keeping it scrollable */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}

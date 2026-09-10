@@ -2,29 +2,10 @@
 
 import { motion } from "framer-motion";
 import { Calendar, ArrowRight } from "lucide-react";
+import Link from "next/link";
+import { getAllPosts, formatDate } from "@/content/blog";
 
-const blogPosts = [
-  {
-    title: "The Importance of Self-Care for Seniors: How Adult Day Care and Home Care Support Healthy Living",
-    excerpt: "Prioritizing Self-Care at Every Stage of Life Self-care is more than relaxation or taking a break — it is an essential part of maintaining overall well-being.",
-    date: "May 7, 2026",
-  },
-  {
-    title: "What to Do When Living at Home Is No Longer a Safe Option for Your Loved One",
-    excerpt: "Caring for an aging parent or loved one is one of the most meaningful responsibilities you can undertake. But there comes a time when difficult decisions must be made.",
-    date: "April 22, 2025",
-  },
-  {
-    title: "Feeling Great Inside and Out: A Guide for World Health Day From Nixon Home Care",
-    excerpt: "Happy World Health Day from all of us at Nixon Home Care! Today, we want to chat about health—not just physical health, but holistic wellness.",
-    date: "April 7, 2024",
-  },
-  {
-    title: "Celebrating Black History Month: A Tribute to Excellence and Resilience",
-    excerpt: "Nixon Home Care is honoring the Legacy and Achievements of African Americans.",
-    date: "February 6, 2024",
-  },
-];
+const blogPosts = getAllPosts().slice(0, 4);
 
 export default function Blog() {
   return (
@@ -45,26 +26,43 @@ export default function Blog() {
         <div className="grid md:grid-cols-2 gap-8">
           {blogPosts.map((post, index) => (
             <motion.article
-              key={post.title}
+              key={post.slug}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="group bg-card border border-border rounded-lg p-8 hover:shadow-lg transition-all cursor-pointer"
             >
-              <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
-                <Calendar className="w-4 h-4" />
-                {post.date}
-              </div>
-              <h3 className="text-xl font-semibold text-foreground mb-4 group-hover:text-accent transition-colors leading-tight">
-                {post.title}
-              </h3>
-              <p className="text-muted-foreground leading-relaxed mb-6">
-                {post.excerpt}
-              </p>
-              
+              <Link
+                href={`/blog/${post.slug}`}
+                className="group flex h-full flex-col bg-card border border-border rounded-lg p-8 hover:shadow-lg transition-all"
+              >
+                <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
+                  <Calendar className="w-4 h-4" />
+                  {formatDate(post.date)}
+                </div>
+                <h3 className="text-xl font-semibold text-foreground mb-4 group-hover:text-accent transition-colors leading-tight">
+                  {post.title}
+                </h3>
+                <p className="text-muted-foreground leading-relaxed mb-6 flex-1">
+                  {post.excerpt}
+                </p>
+                <span className="inline-flex items-center gap-2 text-sm font-medium text-primary">
+                  Read more
+                  <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                </span>
+              </Link>
             </motion.article>
           ))}
+        </div>
+
+        <div className="mt-12 text-center">
+          <Link
+            href="/blog"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-full font-medium hover:bg-primary/90 transition-colors"
+          >
+            View All Posts
+            <ArrowRight className="w-4 h-4" />
+          </Link>
         </div>
       </div>
     </section>

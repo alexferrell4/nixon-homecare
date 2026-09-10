@@ -19,7 +19,12 @@ const playfair = Playfair_Display({
   subsets: ["latin"],
 });
 
+const siteUrl = process.env.VERCEL_PROJECT_PRODUCTION_URL
+  ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+  : "http://localhost:3000";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: "Nixon Home Care | Adult Day Care Houston",
   description: "Helping Texans and their families live better lives. Enjoy a vibrant life of wellness and healthy longevity for your loved ones. Assisted Living, Independent Living, and Adult Day Care services in Houston.",
 };

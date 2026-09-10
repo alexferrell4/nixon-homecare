@@ -6,12 +6,13 @@ import { Menu, X, Phone } from "lucide-react";
 import Link from "next/link";
 
 const navLinks = [
-  { label: "Assisted Living", href: "#services" },
-  { label: "Independent Living", href: "#services" },
-  { label: "Adult Day Care", href: "#services" },
-  { label: "About", href: "#about" },
-  { label: "Reviews", href: "#reviews" },
-  { label: "Contact", href: "#contact" },
+  { label: "Assisted Living", href: "/#services" },
+  { label: "Independent Living", href: "/#services" },
+  { label: "Adult Day Care", href: "/#services" },
+  { label: "About", href: "/#about" },
+  { label: "Reviews", href: "/#reviews" },
+  { label: "Blog", href: "/blog" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 export default function Header() {
@@ -51,12 +52,12 @@ export default function Header() {
               <Phone className="w-4 h-4" />
               <span className="font-medium">(713) 633-4700</span>
             </a>
-            <a
-              href="#contact"
+            <Link
+              href="/#contact"
               className="flex items-center gap-2 px-5 py-2.5 border border-white/30 text-white rounded-sm text-sm font-medium hover:bg-white hover:text-primary transition-colors"
             >
               Contact Us
-            </a>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
