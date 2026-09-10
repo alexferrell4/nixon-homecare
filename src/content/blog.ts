@@ -51,41 +51,49 @@ export const posts: BlogPost[] = [
   },
   {
     slug: "a-day-at-the-center",
-    title: "A Day at the Center (Sample Post)",
-    date: "2026-09-08",
+    title: "A Day at the Nixon Adult Day Center",
+    date: "2026-09-09",
     author: "Nixon Home Care",
     excerpt:
-      "A placeholder post showing how photos and video appear. Replace the images in public/blog/a-day-at-the-center/ and swap in a real video link.",
+      "From the morning van route to the afternoon ride home, here is what a typical day looks like for the adults we care for at our Houston and Shepherd centers.",
     cover: "/hero-bg.jpg",
     body: [
-      "This is a sample post so you can see the layout before real content is ready. The paragraphs here are placeholder text — replace them with a short write-up of the day or event you're covering.",
-      "Below is the photo carousel. Drop your photos into public/blog/a-day-at-the-center/ and update the gallery list in src/content/blog.ts. Any images that aren't uploaded yet show a labeled placeholder tile instead of a broken image.",
-      "Underneath the photos is a video block. Upload the video to YouTube or Vimeo (it can be unlisted), then set the provider and ID in the post's `video` field.",
+      "Nixon Home Care has been part of daily life in Harris County for more than 26 years. Debora Nixon, RN, started the organization in 1997 to close a gap she kept seeing as a nurse: quality adult day care that low-income families could actually reach, including those covered by Medicaid or Medicare. Today our licensed adult day centers in Houston and Shepherd are open Monday through Friday, 7 a.m. to 5 p.m., serving frail elderly adults and adults with disabilities while their families work or take a needed break.",
+      "The day starts on the road. Our seven-van fleet runs door-to-door across the 1,729 square miles of Harris County, so a client's morning begins with a familiar driver and a safe ride to the center. Every driver is certified and licensed, and routes are planned so no one spends longer than necessary in the van. When clients arrive, staff greet each person by name, check in on how they are feeling, and get everyone settled with a mid-morning snack.",
+      "Mornings are for staying active and connected. Depending on the day, that means weekly arts and crafts projects, card games, checkers, dominoes, and bingo, reading time with staff assistance, and a weekly Bible study for those who want it. Physical activity is built in too, adapted to each person's ability, along with music and conversation. Birthdays never pass unnoticed — we celebrate them together.",
+      "Lunch is a hot, balanced meal prepared in our own kitchen to federal and state nutrition guidelines, with a mid-morning and mid-afternoon snack on either side of it. Staff provide feeding assistance for anyone who needs it, and mealtime doubles as social time.",
+      "Some days the group heads out. Past outings have included bowling, museum visits, and trips to the movies, and throughout the year we host holiday celebrations with local community groups, music, and food. These trips and gatherings are one of the things clients look forward to most.",
+      "For families, the center is also respite. Each client receives personal care and supervision for at least six hours a day, five days a week, which means a caregiver can hold down a job, keep a medical appointment, or simply rest, knowing their loved one is safe, fed, and engaged.",
+      "If you are considering the program for a family member, you are welcome to tour either center. Call us at (713) 633-4700 or email Nixon_homecare@msn.com and we will walk you through eligibility, transportation, and what to bring on a first day.",
     ],
     gallery: [
       {
         src: "/hero-bg.jpg",
-        alt: "Nixon Home Care center exterior",
-        caption: "This slide uses an existing site photo so you can see the carousel working.",
+        alt: "An older adult smiling with a caregiver",
+        caption:
+          "Nixon Home Care has served Harris County families for more than 26 years.",
       },
       {
-        src: "/blog/a-day-at-the-center/2.jpg",
-        alt: "Placeholder — activity room",
-        caption: "Replace: public/blog/a-day-at-the-center/2.jpg",
+        src: "/blog/a-day-at-the-center/arts-and-crafts.jpg",
+        alt: "Clients working on a group arts and crafts project at a table",
+        caption:
+          "Weekly arts and crafts is a favorite — projects change with the seasons and holidays.",
       },
       {
-        src: "/blog/a-day-at-the-center/3.jpg",
-        alt: "Placeholder — group activity",
-        caption: "Replace: public/blog/a-day-at-the-center/3.jpg",
+        src: "/blog/a-day-at-the-center/lunch.jpg",
+        alt: "A hot lunch being served in the center's dining room",
+        caption:
+          "A hot midday meal is prepared in our own kitchen every day, with morning and afternoon snacks.",
       },
       {
-        src: "/blog/a-day-at-the-center/4.jpg",
-        alt: "Placeholder — transportation van",
-        caption: "Replace: public/blog/a-day-at-the-center/4.jpg",
+        src: "/blog/a-day-at-the-center/transportation.jpg",
+        alt: "One of the Nixon Home Care transportation vans",
+        caption:
+          "Our seven-van fleet brings clients door to door from across Harris County.",
       },
     ],
-    // Example — uncomment and use a real ID once the video is uploaded:
-    // video: { provider: "youtube", id: "XXXXXXXXXXX", title: "A day at the center" },
+    // Add a real video once it's uploaded to YouTube/Vimeo:
+    // video: { provider: "youtube", id: "XXXXXXXXXXX", title: "A day at the Nixon Adult Day Center" },
   },
 ];
 
