@@ -56,7 +56,7 @@ export const posts: BlogPost[] = [
     gallery: [
       {
         src: "/blog/nse-soft-opening-carnival/estates.jpg",
-        alt: "Evening rendering of Nixon Signature Estates: a lit three-story building with string lights over a courtyard, residents walking the path, and a service member among them",
+        alt: "Evening rendering of Nixon Signature Estates: a three-story building with the lit NSE sign on the facade, a landscaped courtyard, and residents walking the path",
         caption: "A rendering of Nixon Signature Estates.",
       },
       {
