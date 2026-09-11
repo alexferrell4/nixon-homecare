@@ -43,20 +43,21 @@ export const posts: BlogPost[] = [
     date: "2026-09-11",
     author: "Nixon Home Care",
     excerpt:
-      "Our sister community, Nixon Signature Estates, opens its doors this Friday, September 11, from 10 a.m. to 1 p.m. for a soft opening carnival — food, games, a photo booth, and walk-throughs of a furnished demo suite.",
+      "Nixon Signature Estates — the home of Nixon Assisted Living and Nixon Independent Living — opens its doors this Friday, September 11, from 10 a.m. to 1 p.m. for a soft opening carnival with food, games, a photo booth, and walk-throughs of a furnished demo suite.",
     cover: "/blog/nse-soft-opening-carnival/cover.jpg",
     body: [
-      "Nixon Signature Estates, the Nixon family's new senior living community, is holding its Soft Opening Carnival on Friday, September 11, 2026, from 10:00 a.m. to 1:00 p.m. at 6710 Bleker St., Houston, TX 77016. Everyone is welcome to stop by.",
-      "It's a community celebration: there will be food, games, and a photo booth. Come as you are, bring the family, and meet the team behind the community.",
+      "Nixon Signature Estates is holding its Soft Opening Carnival on Friday, September 11, 2026, from 10:00 a.m. to 1:00 p.m. at 6710 Bleker St., Houston, TX 77016. Everyone is welcome to stop by.",
+      "Nixon Signature Estates is the community that brings Nixon Assisted Living of Houston and Nixon Independent Living together in one place — an intentional living community where residents live independently with support close at hand.",
+      "The carnival is a community celebration: there will be food, games, and a photo booth. Come as you are, bring the family, and meet the team.",
       "A fully furnished demo suite will be open for walk-throughs, so you can see the layout for yourself — a private living area, a kitchenette, and a full bathroom in every suite.",
-      "Nixon Signature Estates describes itself as an intentional living community: a three-story, 17-unit building where residents live independently with support close at hand. Suites come with chef-prepared meals, resident transportation, and housekeeping, and the building has elevator access, secure controlled entry, landscaped grounds, a community lounge, on-site parking, and an emergency response system. The grand opening is planned for this fall, and leasing is open now.",
+      "The building is a three-story, 17-unit community. Suites come with chef-prepared meals, resident transportation, and housekeeping, and the building has elevator access, secure controlled entry, landscaped grounds, a community lounge, on-site parking, and an emergency response system. The grand opening is planned for this fall, and leasing is open now.",
       "Soft Opening Carnival — Friday, September 11, 10:00 a.m. to 1:00 p.m., 6710 Bleker St., Houston, TX 77016. For questions or leasing information, call 713-419-2653 or visit nixon-estates.com.",
     ],
     gallery: [
       {
-        src: "/blog/nse-soft-opening-carnival/estates-building.jpg",
-        alt: "The Nixon Signature Estates building with its gold NSE sign",
-        caption: "Nixon Signature Estates on Bleker Street.",
+        src: "/blog/nse-soft-opening-carnival/estates.jpg",
+        alt: "Evening rendering of Nixon Signature Estates: a lit three-story building with string lights over a courtyard, residents walking the path, and a service member among them",
+        caption: "A rendering of Nixon Signature Estates.",
       },
       {
         src: "/blog/nse-soft-opening-carnival/demo-bedroom.jpg",
