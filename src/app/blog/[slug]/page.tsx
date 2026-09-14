@@ -84,32 +84,24 @@ export default async function BlogPostPage({
           </div>
 
           {post.registration ? (
-            <div className="mt-12 flex flex-col items-center gap-6 rounded-lg border border-border bg-card p-8 text-center sm:flex-row sm:text-left">
-              <Image
-                src={post.registration.qrSrc}
-                alt={`QR code to ${post.registration.url}`}
-                width={160}
-                height={160}
-                className="h-40 w-40 shrink-0 rounded-md border border-border"
-              />
-              <div>
-                <p className="text-lg font-semibold text-foreground">
-                  {post.registration.label ?? "Scan to Register"}
+            <div className="mt-12 rounded-lg border border-border bg-card p-8 text-center">
+              <a
+                href={post.registration.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+              >
+                {post.registration.label ?? "Register"}
+                <ExternalLink className="h-4 w-4" />
+              </a>
+              <p className="mt-3 text-sm text-muted-foreground">
+                {post.registration.url.replace(/^https?:\/\/(www\.)?/, "")}
+              </p>
+              {post.registration.note ? (
+                <p className="mt-3 text-sm text-muted-foreground">
+                  {post.registration.note}
                 </p>
-                <a
-                  href={post.registration.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-1 inline-block text-primary hover:underline"
-                >
-                  {post.registration.url.replace(/^https?:\/\/(www\.)?/, "")}
-                </a>
-                {post.registration.note ? (
-                  <p className="mt-3 text-sm text-muted-foreground">
-                    {post.registration.note}
-                  </p>
-                ) : null}
-              </div>
+              ) : null}
             </div>
           ) : null}
 
