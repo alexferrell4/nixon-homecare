@@ -52,16 +52,28 @@ export default async function BlogPostPage({
             All posts
           </Link>
 
-          <header className="mt-8">
-            <div className="mb-4 flex items-center gap-2 text-sm text-muted-foreground">
-              <Calendar className="h-4 w-4" />
-              {formatDate(post.date)}
-              <span aria-hidden="true">&middot;</span>
-              <span>{post.author}</span>
+          <header className="mt-8 flex items-start justify-between gap-6">
+            <div>
+              <div className="mb-4 flex items-center gap-2 text-sm text-muted-foreground">
+                <Calendar className="h-4 w-4" />
+                {formatDate(post.date)}
+                <span aria-hidden="true">&middot;</span>
+                <span>{post.author}</span>
+              </div>
+              <h1 className="font-serif text-3xl font-normal text-foreground text-balance md:text-4xl">
+                {post.title}
+              </h1>
             </div>
-            <h1 className="font-serif text-3xl font-normal text-foreground text-balance md:text-4xl">
-              {post.title}
-            </h1>
+
+            {post.badge ? (
+              <Image
+                src={post.badge.src}
+                alt={post.badge.alt}
+                width={112}
+                height={112}
+                className="h-20 w-20 shrink-0 rounded-md border border-border object-cover sm:h-28 sm:w-28"
+              />
+            ) : null}
           </header>
 
           {post.cover ? (

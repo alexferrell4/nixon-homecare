@@ -37,6 +37,8 @@ export type BlogPost = {
   excerpt: string;
   /** Card / header image path under /public */
   cover?: string;
+  /** Small seal/logo shown in the top-right corner of the post header (e.g. an award badge) */
+  badge?: BlogImage;
   /** Body paragraphs, rendered in order */
   body: string[];
   /** Optional scan-to-register call to action (QR code + link) */
@@ -61,7 +63,11 @@ export const posts: BlogPost[] = [
     author: "Nixon Home Care",
     excerpt:
       "BusinessRate has named Nixon Adult Day Center the Best Adult Day Care Center in Northside for 2026, based on Google reviews from the families and clients we serve.",
-    cover: "/hero-bg.jpg",
+    cover: "/blog/best-adult-day-care-2026/cover.jpg",
+    badge: {
+      src: "/blog/best-adult-day-care-2026/badge.jpg",
+      alt: "BusinessRate Best of 2026 Award Winner seal",
+    },
     body: [
       "Nixon Adult Day Center has been named the Best Adult Day Care Center in Northside for 2026 by BusinessRate, a recognition platform that rates local businesses using customer reviews. The distinction is based on Google reviews from the families and clients we serve every day.",
       "In a letter dated August 25, 2026, BusinessRate wrote that Nixon Adult Day Center “has distinguished itself among the highest-rated businesses in [its] category and market,” based on verified customer feedback and publicly available review data drawn from more than 26 million businesses and 1.7 billion reviews compiled over 18 years.",
@@ -69,8 +75,6 @@ export const posts: BlogPost[] = [
       "We're proud of the award, but prouder of what it represents: 26 years of showing up for Harris County families, five days a week, one client at a time. Thank you to every family who has left us a review, referred a friend, or simply trusted us with the people they love most.",
       "If Nixon Adult Day Center has been part of your family's story, we'd be grateful for a Google review — it's exactly the kind of feedback that made this recognition possible.",
     ],
-    // Add the award letter image (with the Nixon logo added) once it's ready —
-    // see public/blog/best-adult-day-care-2026/.
   },
   {
     slug: "nse-soft-opening-carnival",
