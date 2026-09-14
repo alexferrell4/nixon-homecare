@@ -83,23 +83,55 @@ export default async function BlogPostPage({
             ))}
           </div>
 
-          {post.flyer ? (
-            <figure className="mt-12">
+          {post.registration ? (
+            <div className="mt-12 flex flex-col items-center gap-6 rounded-lg border border-border bg-card p-8 text-center sm:flex-row sm:text-left">
               <Image
-                src={post.flyer.src}
-                alt={post.flyer.alt}
-                width={1000}
-                height={1500}
-                sizes="(max-width: 640px) 100vw, 640px"
-                className="mx-auto h-auto w-full max-w-xl rounded-lg border border-border"
+                src={post.registration.qrSrc}
+                alt={`QR code to ${post.registration.url}`}
+                width={160}
+                height={160}
+                className="h-40 w-40 shrink-0 rounded-md border border-border"
               />
-              {post.flyer.caption ? (
-                <figcaption className="mt-3 text-center text-sm text-muted-foreground">
-                  {post.flyer.caption}
-                </figcaption>
-              ) : null}
-            </figure>
+              <div>
+                <p className="text-lg font-semibold text-foreground">
+                  {post.registration.label ?? "Scan to Register"}
+                </p>
+                <a
+                  href={post.registration.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-1 inline-block text-primary hover:underline"
+                >
+                  {post.registration.url.replace(/^https?:\/\/(www\.)?/, "")}
+                </a>
+                {post.registration.note ? (
+                  <p className="mt-3 text-sm text-muted-foreground">
+                    {post.registration.note}
+                  </p>
+                ) : null}
+              </div>
+            </div>
           ) : null}
+
+          {post.flyers && post.flyers.length > 0
+            ? post.flyers.map((flyer, i) => (
+                <figure key={flyer.src} className={i === 0 ? "mt-12" : "mt-8"}>
+                  <Image
+                    src={flyer.src}
+                    alt={flyer.alt}
+                    width={1000}
+                    height={1500}
+                    sizes="(max-width: 640px) 100vw, 640px"
+                    className="mx-auto h-auto w-full max-w-xl rounded-lg border border-border"
+                  />
+                  {flyer.caption ? (
+                    <figcaption className="mt-3 text-center text-sm text-muted-foreground">
+                      {flyer.caption}
+                    </figcaption>
+                  ) : null}
+                </figure>
+              ))
+            : null}
 
           {post.gallery && post.gallery.length > 0 ? (
             <section className="mt-12" aria-label="Photos">

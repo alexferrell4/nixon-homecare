@@ -17,6 +17,17 @@ export type BlogVideo = {
   title?: string;
 };
 
+export type BlogRegistration = {
+  /** Path to a generated QR code image under /public */
+  qrSrc: string;
+  /** The URL the QR code (and the text link) point to */
+  url: string;
+  /** Defaults to "Scan to Register" */
+  label?: string;
+  /** Extra instructions shown under the link, e.g. what to select in a form */
+  note?: string;
+};
+
 export type BlogPost = {
   slug: string;
   title: string;
@@ -28,8 +39,10 @@ export type BlogPost = {
   cover?: string;
   /** Body paragraphs, rendered in order */
   body: string[];
-  /** Optional full-size image (e.g. an event flyer), shown uncropped */
-  flyer?: BlogImage;
+  /** Optional scan-to-register call to action (QR code + link) */
+  registration?: BlogRegistration;
+  /** Optional full-size image(s) (e.g. an event flyer), shown uncropped */
+  flyers?: BlogImage[];
   /** Optional photo carousel */
   gallery?: BlogImage[];
   /** Optional embedded video */
@@ -85,17 +98,31 @@ export const posts: BlogPost[] = [
       "Join us Thursday, September 17 for a Community Computer Giveaway with Compudopt — free computers for eligible neighbors, followed by a free 10-week digital literacy class.",
     cover: "/blog/compudopt-computer-giveaway/cover.jpg",
     body: [
-      "Nixon Home Care is teaming up with Compudopt, a Houston nonprofit working to bridge the digital divide, for a Community Computer Giveaway. The goal is simple: help our neighbors get connected, with the tools and the know-how to make it count.",
+      "Nixon Home Care is teaming up with Compudopt, a national nonprofit working to bridge the digital divide, for a Community Computer Giveaway — supported by AT&T. The goal is simple: help our neighbors get connected, with the tools and the know-how to make it count.",
       "The giveaway is Thursday, September 17, 2026, from 10:00 a.m. to 12:00 p.m. at 6803 Bleker St., Houston, TX 77019. Free computers will be available for eligible community members.",
-      "Compudopt provides free computers and technology education to families across Houston, generally serving households that don't already have a working computer at home. Visit compudopt.org/houston for current eligibility details and to register.",
+      "Compudopt provides free computers, affordable internet, and tech education to help people thrive in today's digital world. To qualify, you must not already own a working computer at home. Computers come with a 2-year warranty and free tech support, and selected individuals are notified by text and email.",
+      "Register below, or scan the QR code at the giveaway. When asked which organization you're with, select \"Nixon Adult Day Center.\" Questions about registration go straight to Compudopt at (855) 532-5060.",
+      "Have an old device collecting dust? If you're selected, bring it with you when you pick up your new computer — Compudopt repurposes donated technology and gives it a second life. They accept laptops, desktops, keyboards, mice, monitors, tablets, cell phones, components, and networking equipment, and donation receipts are available on request.",
       "It doesn't stop with the hardware. Beginning the following Wednesday, Compudopt will host a free 10-week Computer and Digital Literacy class — every Wednesday from 10:00 a.m. to 12:00 p.m. at 6800 Bleker St., Houston, TX 77016. The class covers the real skills that turn a computer into an opportunity.",
-      "More than just computers: real skills, bigger opportunities, and a stronger community. To learn more, call Nixon Home Care at (713) 633-4700 or email Nixon_homecare@msn.com.",
-      "The full flyer is below — please share it with anyone who could use it.",
+      "More than just computers: real skills, bigger opportunities, and a stronger community. To learn more about the event itself, call Nixon Home Care at (713) 633-4700 or email Nixon_homecare@msn.com.",
+      "Both flyers are below — please share them with anyone who could use a computer.",
     ],
-    flyer: {
-      src: "/blog/compudopt-computer-giveaway/flyer.jpg",
-      alt: "Nixon Home Care and Compudopt Community Computer Giveaway flyer: Thursday 9/17/26, 10 a.m. to 12 p.m., 6803 Bleker St., Houston, TX 77019. Free computers for eligible community members, followed by a free 10-week digital literacy class every Wednesday at 6800 Bleker St., Houston, TX 77016.",
+    registration: {
+      qrSrc: "/blog/compudopt-computer-giveaway/register-qr.png",
+      url: "https://www.compudopt.org/houston",
+      label: "Scan to Register",
+      note: "Under “Which organization are you with?” select “Nixon Adult Day Center.”",
     },
+    flyers: [
+      {
+        src: "/blog/compudopt-computer-giveaway/flyer.jpg",
+        alt: "Nixon Home Care and Compudopt Community Computer Giveaway flyer: Thursday 9/17/26, 10 a.m. to 12 p.m., 6803 Bleker St., Houston, TX 77019. Free computers for eligible community members, followed by a free 10-week digital literacy class every Wednesday at 6800 Bleker St., Houston, TX 77016.",
+      },
+      {
+        src: "/blog/compudopt-computer-giveaway/register-flyer.jpg",
+        alt: "Compudopt Computer Giveaway registration flyer, supported by AT&T and Nixon Home Care: register for a chance at a free computer at compudopt.org/houston. Must not own a working computer at home; computers include a 2-year warranty and free tech support. Selected individuals are notified by text and email. Questions: (855) 532-5060.",
+      },
+    ],
   },
   {
     slug: "nixon-26th-birthday-brunch",
