@@ -34,6 +34,10 @@ export type BlogPost = {
   gallery?: BlogImage[];
   /** Optional embedded video */
   video?: BlogVideo;
+  /** Optional link to a full public photo album (e.g. a Dropbox/Drive folder) */
+  albumUrl?: string;
+  /** Label for the albumUrl link. Defaults to "View the full photo album" */
+  albumLabel?: string;
 };
 
 export const posts: BlogPost[] = [
@@ -107,8 +111,11 @@ export const posts: BlogPost[] = [
       "The program also made time to honor the people behind the work — longtime clients and their families, staff, and community partners — each recognized with a gift and a warm round of applause.",
       "A fund-a-need appeal invited guests to give toward everyday needs at the centers: transportation, meals, and activities. Paddles went up all over the room.",
       "Our thanks to everyone who came out and gave. Twenty-six years in, the mission hasn't changed: helping Texans and their families live better lives.",
-      "A few moments from the afternoon are below. We'll add a short video from the brunch once it's posted online.",
+      "A few moments from the afternoon are below, and the full photo set from the day is linked underneath the gallery for anyone who wants to see or save more. We'll add a short video from the brunch once it's posted online.",
     ],
+    albumUrl:
+      "https://www.dropbox.com/scl/fo/1c6rotugbr2r0gndqqd0s/AFNNyj4ppVSmrMMm7btW-Zs?rlkey=unxe0iq5emrr09rukwuptyawh&st=muiwcgrx&dl=0",
+    albumLabel: "View the full photo album",
     gallery: [
       {
         src: "/blog/nixon-26th-birthday-brunch/brunch-01.jpg",

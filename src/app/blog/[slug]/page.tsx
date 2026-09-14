@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import { Calendar, ArrowLeft } from "lucide-react";
+import { Calendar, ArrowLeft, ExternalLink } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Carousel from "@/components/Carousel";
@@ -107,6 +107,18 @@ export default async function BlogPostPage({
                 Photos
               </h2>
               <Carousel images={post.gallery} />
+
+              {post.albumUrl ? (
+                <a
+                  href={post.albumUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline"
+                >
+                  {post.albumLabel ?? "View the full photo album"}
+                  <ExternalLink className="h-4 w-4" />
+                </a>
+              ) : null}
             </section>
           ) : null}
 
