@@ -85,6 +85,22 @@ export default async function BlogPostPage({
 
           {post.registration ? (
             <div className="mt-12 rounded-lg border border-border bg-card p-8 text-center">
+              {post.registration.qrSrc ? (
+                <a
+                  href={post.registration.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mx-auto mb-6 block w-fit rounded-md border border-border p-2"
+                >
+                  <Image
+                    src={post.registration.qrSrc}
+                    alt={`QR code to ${post.registration.url}`}
+                    width={160}
+                    height={160}
+                    className="h-40 w-40"
+                  />
+                </a>
+              ) : null}
               <a
                 href={post.registration.url}
                 target="_blank"
