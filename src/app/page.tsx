@@ -20,9 +20,9 @@ export default function Home() {
         <Hero />
         <Marquee />
         <Services />
+        <AdditionalServices />
         <SignatureEstates />
         <CounselingServices />
-        <AdditionalServices />
         <BlogPreview />
         <About />
         <WhyNixon />

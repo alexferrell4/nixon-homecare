@@ -9,6 +9,8 @@ const navLinks = [
   { label: "Assisted Living", href: "/#services" },
   { label: "Independent Living", href: "/#services" },
   { label: "Adult Day Care", href: "/#services" },
+  { label: "Signature Estates", href: "/signature-estates" },
+  { label: "Counseling Services", href: "/counseling-services" },
   { label: "About", href: "/#about" },
   { label: "Reviews", href: "/#reviews" },
   { label: "Blog", href: "/blog" },

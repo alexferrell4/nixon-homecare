@@ -84,6 +84,16 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/signature-estates" className="text-background/60 hover:text-accent transition-colors">
+                  Signature Estates
+                </Link>
+              </li>
+              <li>
+                <Link href="/counseling-services" className="text-background/60 hover:text-accent transition-colors">
+                  Counseling Services
+                </Link>
+              </li>
+              <li>
                 <Link href="/blog" className="text-background/60 hover:text-accent transition-colors">
                   Blog
                 </Link>
