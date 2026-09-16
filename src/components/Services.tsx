@@ -2,7 +2,8 @@
 
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { Home, Users, Sun, Plus, Minus } from "lucide-react";
+import Link from "next/link";
+import { Home, Users, Sun, Building2, Brain, Plus, Minus, ArrowRight } from "lucide-react";
 
 const services = [
   {
@@ -25,6 +26,24 @@ const services = [
     title: "Adult Day Care Center",
     shortDesc: "Normally, adult day care is used to relieve the caregiver of his or her duties for the day while ensuring that the care recipient will receive quality care.",
     fullDesc: "Open Monday-Friday from 7:00 Am to 5:00 Pm and Closed on weekends, we provide adult supervision and social activities including physical activities based on each client's physical and mental capabilities, weekly arts and crafts, games such as cards, checkers, bingo and dominoes, books and assistance with reading, weekly Bible study and community field trips as well as birthday and holiday celebrations.",
+  },
+  {
+    id: "signature-estates",
+    icon: Building2,
+    title: "Nixon Signature Estates",
+    shortDesc: "Now leasing: an intentional living community bringing Nixon Assisted Living and Nixon Independent Living together in one place.",
+    fullDesc: "Nixon Signature Estates is a new three-story, 17-unit community where residents live independently with support close at hand. Every suite includes chef-prepared meals, resident transportation, and housekeeping, with elevator access, secure controlled entry, a community lounge, landscaped grounds, and an emergency response system throughout the building. Leasing is open now, with a grand opening planned for fall 2026.",
+    href: "/signature-estates",
+    linkLabel: "Learn more & lease at nixon-estates.com",
+  },
+  {
+    id: "counseling-services",
+    icon: Brain,
+    title: "Nixon Counseling Services",
+    shortDesc: "Compassionate behavioral health services for adults, children, and families throughout Houston.",
+    fullDesc: "Nixon Counseling Services offers psychosocial rehabilitation, adult behavioral health, child and adolescent support, school advocacy, behavioral health assessments, mental health skills training, and individual, family, and case management services. Molina Healthcare, Superior HealthPlan, and self-pay are accepted.",
+    href: "/counseling-services",
+    linkLabel: "Learn more at nixoncounselingservices.org",
   },
 ];
 
@@ -90,6 +109,15 @@ export default function Services() {
                 <div className="px-6 pb-6 pt-2">
                   <p className="text-muted-foreground leading-relaxed sm:hidden mb-4">{service.shortDesc}</p>
                   <p className="text-muted-foreground leading-relaxed">{service.fullDesc}</p>
+                  {service.href ? (
+                    <Link
+                      href={service.href}
+                      className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline"
+                    >
+                      {service.linkLabel ?? "Learn more"}
+                      <ArrowRight className="w-4 h-4" />
+                    </Link>
+                  ) : null}
                 </div>
               </div>
             </motion.div>
