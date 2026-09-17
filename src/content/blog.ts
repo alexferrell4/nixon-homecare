@@ -57,6 +57,144 @@ export type BlogPost = {
 
 export const posts: BlogPost[] = [
   {
+    slug: "compudopt-giveaway-recap",
+    title: "75 Computers Delivered: Our Compudopt Giveaway Recap",
+    date: "2026-09-17",
+    author: "Nixon Home Care",
+    excerpt:
+      "Today Nixon Home Care and Compudopt gave away 75 free computers to families and community members in Northeast Houston. Here's a look back at the day.",
+    cover: "/blog/compudopt-giveaway-recap/giveaway-01.jpg",
+    body: [
+      "Today, September 17, 2026, Nixon Home Care and Compudopt gave away 75 free computers to eligible community members at 6803 Bleker St. It was a great turnout, and it was wonderful to see so many neighbors leave with a computer of their own.",
+      "The Compudopt van rolled in loaded with bags, and our team spent the morning walking them door to door — laptops, chargers, and everything needed to get connected, packed into Compudopt's bright blue \"Connected by AT&T\" totes. Volunteers checked people in, matched names to registrations, and made sure everyone left with what they came for.",
+      "It doesn't stop with the hardware. Starting this Wednesday, September 23, Compudopt is hosting a free 10-week Computer and Digital Literacy class every Wednesday from 10:00 a.m. to 12:00 p.m. at 6800 Bleker St., Houston, TX 77016 — open to anyone who wants to build real skills on their new computer.",
+      "Thank you to Compudopt, AT&T, and every volunteer who helped make today possible. Seventy-five computers means seventy-five neighbors with a little more opportunity than they had yesterday, and that's exactly the kind of day we like to have.",
+      "A slideshow of photos from the day is below.",
+    ],
+    gallery: [
+      {
+        src: "/blog/compudopt-giveaway-recap/giveaway-01.jpg",
+        alt: "Four people smiling in front of the Compudopt van, three holding blue Compudopt bags",
+        caption: "Nixon Home Care and Compudopt with recipients in front of the Compudopt van.",
+      },
+      {
+        src: "/blog/compudopt-giveaway-recap/giveaway-02.jpg",
+        alt: "A group posing in front of the Compudopt van with blue Compudopt bags",
+        caption: "Another group picks up their new computers.",
+      },
+      {
+        src: "/blog/compudopt-giveaway-recap/giveaway-03.jpg",
+        alt: "The Compudopt van with its side door open, bags loaded inside",
+        caption: "Loading bags from the Compudopt van.",
+      },
+      {
+        src: "/blog/compudopt-giveaway-recap/giveaway-04.jpg",
+        alt: "Blue Compudopt bags staged on a table next to the van",
+        caption: "Bags staged and ready for delivery.",
+      },
+      {
+        src: "/blog/compudopt-giveaway-recap/giveaway-05.jpg",
+        alt: "A staff member carrying blue Compudopt bags near the van",
+        caption: "Carrying bags in for distribution.",
+      },
+      {
+        src: "/blog/compudopt-giveaway-recap/giveaway-06.jpg",
+        alt: "A staff member carrying bags from the van toward the building",
+        caption: "More bags headed inside.",
+      },
+      {
+        src: "/blog/compudopt-giveaway-recap/giveaway-07.jpg",
+        alt: "The Compudopt van parked outside, reading Compudopt, Empowering youth through technology, Power. Learn. Thrive.",
+        caption: "The Compudopt van, parked and ready for the day.",
+      },
+      {
+        src: "/blog/compudopt-giveaway-recap/giveaway-08.jpg",
+        alt: "A staff member carrying bags down an interior hallway",
+        caption: "Delivering bags down the hallway.",
+      },
+      {
+        src: "/blog/compudopt-giveaway-recap/giveaway-09.jpg",
+        alt: "A staff member handing a box to a resident at a doorway",
+        caption: "Greeting a resident with her new computer.",
+      },
+      {
+        src: "/blog/compudopt-giveaway-recap/giveaway-10.jpg",
+        alt: "A staff member walking down a hallway with bags",
+        caption: "Making the rounds with deliveries.",
+      },
+      {
+        src: "/blog/compudopt-giveaway-recap/giveaway-11.jpg",
+        alt: "A staff member in a hallway carrying Compudopt bags",
+        caption: "Another delivery in progress.",
+      },
+      {
+        src: "/blog/compudopt-giveaway-recap/giveaway-12.jpg",
+        alt: "A resident carrying a blue Compudopt bag down the hallway",
+        caption: "A resident carries her new computer home.",
+      },
+      {
+        src: "/blog/compudopt-giveaway-recap/giveaway-13.jpg",
+        alt: "A staff member handing a laptop box to a resident at a door",
+        caption: "Handing over a laptop at the door.",
+      },
+      {
+        src: "/blog/compudopt-giveaway-recap/giveaway-14.jpg",
+        alt: "Residents lined up in a hallway waiting to check in",
+        caption: "Residents checking in for their computers.",
+      },
+      {
+        src: "/blog/compudopt-giveaway-recap/giveaway-15.jpg",
+        alt: "Residents signing in at a registration table in the hallway",
+        caption: "Signing in at the registration table.",
+      },
+      {
+        src: "/blog/compudopt-giveaway-recap/giveaway-16.jpg",
+        alt: "A large stack of blue Compudopt bags and laptop boxes",
+        caption: "Bags packed and ready to go out.",
+      },
+      {
+        src: "/blog/compudopt-giveaway-recap/giveaway-17.jpg",
+        alt: "A staff member and a recipient posing with a blue Compudopt bag at a doorway",
+        caption: "All smiles with a new Compudopt bag.",
+      },
+      {
+        src: "/blog/compudopt-giveaway-recap/giveaway-18.jpg",
+        alt: "A staff member and a recipient posing with a blue Compudopt bag at a doorway",
+        caption: "Another happy recipient.",
+      },
+      {
+        src: "/blog/compudopt-giveaway-recap/giveaway-19.jpg",
+        alt: "A group gathered together indoors near the end of the event",
+        caption: "Staff and residents gather to celebrate the day.",
+      },
+      {
+        src: "/blog/compudopt-giveaway-recap/giveaway-20.jpg",
+        alt: "Recipients posing indoors with their new computers",
+        caption: "Recipients with their new computers.",
+      },
+      {
+        src: "/blog/compudopt-giveaway-recap/giveaway-21.jpg",
+        alt: "A recipient holding up a phone next to her new Compudopt bag",
+        caption: "Checking out the new laptop.",
+      },
+      {
+        src: "/blog/compudopt-giveaway-recap/giveaway-22.jpg",
+        alt: "A staff member and a recipient in scrubs posing together",
+        caption: "A proud moment with the Compudopt team.",
+      },
+      {
+        src: "/blog/compudopt-giveaway-recap/giveaway-23.jpg",
+        alt: "A staff member and a recipient posing with a Compudopt bag",
+        caption: "Another thank-you photo.",
+      },
+      {
+        src: "/blog/compudopt-giveaway-recap/giveaway-24.jpg",
+        alt: "A staff member and a recipient giving a thumbs up with a Compudopt bag",
+        caption: "Celebrating with a new computer in hand.",
+      },
+    ],
+  },
+  {
     slug: "best-adult-day-care-2026",
     title: "Nixon Adult Day Center Named Best Adult Day Care in Northside for 2026",
     date: "2026-09-14",
