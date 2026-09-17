@@ -65,7 +65,7 @@ export default function Carousel({ images }: CarouselProps) {
             aria-roledescription="slide"
             aria-label={`${i + 1} of ${images.length}`}
           >
-            <div className="relative aspect-[16/10] w-full bg-muted">
+            <div className="relative h-[70vh] max-h-160 min-h-80 w-full bg-muted">
               {failed[i] ? (
                 <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 p-6 text-center text-muted-foreground">
                   <ImageOff className="h-8 w-8" />
@@ -77,7 +77,7 @@ export default function Carousel({ images }: CarouselProps) {
                   alt={img.alt}
                   fill
                   sizes="(max-width: 768px) 100vw, 800px"
-                  className="object-cover"
+                  className="object-contain"
                   onError={() => setFailed((f) => ({ ...f, [i]: true }))}
                   priority={i === 0}
                 />
