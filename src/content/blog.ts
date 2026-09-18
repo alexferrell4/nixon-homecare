@@ -57,6 +57,88 @@ export type BlogPost = {
 
 export const posts: BlogPost[] = [
   {
+    slug: "nse-soft-opening-recap",
+    title: "Nixon Signature Estates Soft Opening: A Recap",
+    date: "2026-09-18",
+    author: "Nixon Home Care",
+    excerpt:
+      "On September 11, Nixon Signature Estates held its soft opening — tents, balloons, a crowd of neighbors, and a first look inside a furnished suite. Here's a recap.",
+    cover: "/blog/nse-soft-opening-recap/recap-01.jpg",
+    body: [
+      "On Friday, September 11, 2026, Nixon Signature Estates held its soft opening at 6710 Bleker St. Tents went up in the courtyard, balloons marked the entrance, and neighbors came out to see the building for themselves ahead of this fall's grand opening.",
+      "Nixon Signature Estates brings Nixon Assisted Living and Nixon Independent Living together in one place — a three-story, 17-unit community where residents live independently with support close at hand. Guests who came out got to walk through a furnished demo suite, seeing the bedroom, kitchenette, and bathroom in person.",
+      "Every suite comes with chef-prepared meals, resident transportation, and housekeeping, and the building itself has elevator access, secure controlled entry, a community lounge, landscaped grounds, on-site parking, and an emergency response system throughout.",
+      "Leasing is open now, with the grand opening planned for this fall. If you weren't able to make it out on the 11th, you can still schedule a tour: call (713) 419-2653 or visit nixon-estates.com.",
+      "Thank you to everyone who came out to celebrate with us. A slideshow from the day, including a look inside the demo suite, is below.",
+    ],
+    gallery: [
+      {
+        src: "/blog/nse-soft-opening-recap/recap-01.jpg",
+        alt: "Aerial view of the Nixon Signature Estates building with a white event tent and balloon decorations set up in the courtyard",
+      },
+      {
+        src: "/blog/nse-soft-opening-recap/recap-02.jpg",
+        alt: "Aerial view of the courtyard with an event tent and guests gathered",
+      },
+      {
+        src: "/blog/nse-soft-opening-recap/recap-03.jpg",
+        alt: "Aerial view of the Nixon Signature Estates building and courtyard event setup",
+      },
+      {
+        src: "/blog/nse-soft-opening-recap/recap-04.jpg",
+        alt: "Ground-level view of the event lot with balloons and tents set up",
+      },
+      {
+        src: "/blog/nse-soft-opening-recap/recap-05.jpg",
+        alt: "Aerial view of a canopy tent with tables and guests underneath",
+      },
+      {
+        src: "/blog/nse-soft-opening-recap/recap-06.jpg",
+        alt: "Street-level view of the event with parked cars and guests walking in",
+      },
+      {
+        src: "/blog/nse-soft-opening-recap/recap-07.jpg",
+        alt: "Aerial view of guests walking near the event tents",
+      },
+      {
+        src: "/blog/nse-soft-opening-recap/recap-08.jpg",
+        alt: "Wide aerial view of the neighborhood surrounding the event",
+      },
+      {
+        src: "/blog/nse-soft-opening-recap/recap-09.jpg",
+        alt: "Aerial view of the side of the Nixon Signature Estates building",
+      },
+      {
+        src: "/blog/nse-soft-opening-recap/recap-10.jpg",
+        alt: "A Nixon Signature Estates and Nixon Home Care banner displayed in a common area",
+      },
+      {
+        src: "/blog/nse-soft-opening-recap/recap-11.jpg",
+        alt: "A bathroom in the furnished demo suite",
+      },
+      {
+        src: "/blog/nse-soft-opening-recap/recap-12.jpg",
+        alt: "A bedroom in the furnished demo suite",
+      },
+      {
+        src: "/blog/nse-soft-opening-recap/recap-13.jpg",
+        alt: "A kitchenette in the furnished demo suite",
+      },
+      {
+        src: "/blog/nse-soft-opening-recap/recap-14.jpg",
+        alt: "A corner of the bedroom in the furnished demo suite with a dresser",
+      },
+      {
+        src: "/blog/nse-soft-opening-recap/recap-15.jpg",
+        alt: "The bedroom entrance in the furnished demo suite",
+      },
+      {
+        src: "/blog/nse-soft-opening-recap/recap-16.jpg",
+        alt: "Another view of the kitchenette in the furnished demo suite",
+      },
+    ],
+  },
+  {
     slug: "compudopt-giveaway-recap",
     title: "75 Computers Delivered: Our Compudopt Giveaway Recap",
     date: "2026-09-17",
