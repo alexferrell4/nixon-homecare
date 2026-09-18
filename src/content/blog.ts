@@ -1,7 +1,7 @@
 // Blog content lives here in the repo. To publish a new post, add an entry to
 // `posts` below and commit. Photos go in `public/blog/<slug>/` and are referenced
 // by path (e.g. "/blog/my-post/photo-1.jpg"). Video is embedded from YouTube or
-// Vimeo — never checked into the repo.
+// Vimeoo — never checked into the repo.
 
 export type BlogImage = {
   /** Path under /public, e.g. "/blog/summer-picnic/1.jpg" */
