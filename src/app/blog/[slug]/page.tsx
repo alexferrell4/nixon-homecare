@@ -158,7 +158,7 @@ export default async function BlogPostPage({
               <h2 className="mb-4 text-sm font-medium uppercase tracking-widest text-accent">
                 Photos
               </h2>
-              <Carousel images={post.gallery} />
+              <Carousel images={post.gallery} autoplay={post.galleryAutoplay} />
 
               {post.albumUrl ? (
                 <a

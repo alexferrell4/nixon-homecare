@@ -2,24 +2,35 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import { ChevronLeft, ChevronRight, ImageOff } from "lucide-react";
+import { ChevronLeft, ChevronRight, ImageOff, Pause, Play } from "lucide-react";
 import type { BlogImage } from "@/content/blog";
 
 type CarouselProps = {
   images: BlogImage[];
+  /** Auto-advance through the slides on its own, looping back to the start */
+  autoplay?: boolean;
+  autoplayIntervalMs?: number;
 };
 
-export default function Carousel({ images }: CarouselProps) {
+export default function Carousel({
+  images,
+  autoplay = false,
+  autoplayIntervalMs = 4000,
+}: CarouselProps) {
   const trackRef = useRef<HTMLDivElement>(null);
   const [active, setActive] = useState(0);
   const [failed, setFailed] = useState<Record<number, boolean>>({});
+  const [paused, setPaused] = useState(false);
 
   const scrollToIndex = useCallback((index: number) => {
     const track = trackRef.current;
     if (!track) return;
-    const clamped = Math.max(0, Math.min(index, images.length - 1));
-    track.scrollTo({ left: track.clientWidth * clamped, behavior: "smooth" });
-  }, [images.length]);
+    const count = images.length;
+    const target = autoplay
+      ? ((index % count) + count) % count
+      : Math.max(0, Math.min(index, count - 1));
+    track.scrollTo({ left: track.clientWidth * target, behavior: "smooth" });
+  }, [images.length, autoplay]);
 
   const onScroll = useCallback(() => {
     const track = trackRef.current;
@@ -34,6 +45,17 @@ export default function Carousel({ images }: CarouselProps) {
     track.addEventListener("scroll", onScroll, { passive: true });
     return () => track.removeEventListener("scroll", onScroll);
   }, [onScroll]);
+
+  useEffect(() => {
+    if (!autoplay || images.length <= 1 || paused) return;
+    const id = setInterval(() => {
+      const track = trackRef.current;
+      if (!track) return;
+      const current = Math.round(track.scrollLeft / track.clientWidth);
+      scrollToIndex(current + 1);
+    }, autoplayIntervalMs);
+    return () => clearInterval(id);
+  }, [autoplay, autoplayIntervalMs, images.length, paused, scrollToIndex]);
 
   if (!images.length) return null;
 
@@ -92,12 +114,23 @@ export default function Carousel({ images }: CarouselProps) {
         ))}
       </div>
 
+      {autoplay && images.length > 1 && (
+        <button
+          type="button"
+          onClick={() => setPaused((p) => !p)}
+          aria-label={paused ? "Play slideshow" : "Pause slideshow"}
+          className="absolute right-3 top-3 z-10 rounded-full bg-background/80 p-2 text-foreground shadow-md backdrop-blur transition hover:bg-background"
+        >
+          {paused ? <Play className="h-4 w-4" /> : <Pause className="h-4 w-4" />}
+        </button>
+      )}
+
       {images.length > 1 && (
         <>
           <button
             type="button"
             onClick={() => scrollToIndex(active - 1)}
-            disabled={active === 0}
+            disabled={!autoplay && active === 0}
             aria-label="Previous photo"
             className="absolute left-3 top-[calc(50%-1rem)] -translate-y-1/2 rounded-full bg-background/80 p-2 text-foreground shadow-md backdrop-blur transition hover:bg-background disabled:opacity-0"
           >
@@ -106,7 +139,7 @@ export default function Carousel({ images }: CarouselProps) {
           <button
             type="button"
             onClick={() => scrollToIndex(active + 1)}
-            disabled={active === images.length - 1}
+            disabled={!autoplay && active === images.length - 1}
             aria-label="Next photo"
             className="absolute right-3 top-[calc(50%-1rem)] -translate-y-1/2 rounded-full bg-background/80 p-2 text-foreground shadow-md backdrop-blur transition hover:bg-background disabled:opacity-0"
           >

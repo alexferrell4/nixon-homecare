@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { Calendar, ArrowRight } from "lucide-react";
+import { Calendar, ArrowRight, Pin } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { getAllPosts, formatDate } from "@/content/blog";
@@ -38,8 +38,14 @@ export default function BlogIndexPage() {
               <Link
                 key={post.slug}
                 href={`/blog/${post.slug}`}
-                className="group flex flex-col overflow-hidden rounded-lg border border-border bg-card transition-all hover:shadow-lg"
+                className="group relative flex flex-col overflow-hidden rounded-lg border border-border bg-card transition-all hover:shadow-lg"
               >
+                {post.pinned ? (
+                  <span className="absolute left-4 top-4 z-10 inline-flex items-center gap-1.5 rounded-full bg-accent px-3 py-1 text-xs font-semibold uppercase tracking-widest text-accent-foreground shadow">
+                    <Pin className="h-3 w-3" />
+                    Pinned
+                  </span>
+                ) : null}
                 {post.cover ? (
                   <div className="relative aspect-[16/9] w-full overflow-hidden bg-muted">
                     <Image

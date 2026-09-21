@@ -1,7 +1,7 @@
 // Blog content lives here in the repo. To publish a new post, add an entry to
 // `posts` below and commit. Photos go in `public/blog/<slug>/` and are referenced
 // by path (e.g. "/blog/my-post/photo-1.jpg"). Video is embedded from YouTube or
-// Vimeoo — never checked into the repo.
+// Vimeo — never checked into the repo.
 
 export type BlogImage = {
   /** Path under /public, e.g. "/blog/summer-picnic/1.jpg" */
@@ -35,6 +35,8 @@ export type BlogPost = {
   date: string;
   author: string;
   excerpt: string;
+  /** Pinned posts always sort first on the blog, ahead of newer unpinned posts */
+  pinned?: boolean;
   /** Card / header image path under /public */
   cover?: string;
   /** Small seal/logo shown in the top-right corner of the post header (e.g. an award badge) */
@@ -47,6 +49,8 @@ export type BlogPost = {
   flyers?: BlogImage[];
   /** Optional photo carousel */
   gallery?: BlogImage[];
+  /** Auto-advance the gallery carousel on its own, pausing on hover */
+  galleryAutoplay?: boolean;
   /** Optional embedded video */
   video?: BlogVideo;
   /** Optional link to a full public photo album (e.g. a Dropbox/Drive folder) */
@@ -487,9 +491,13 @@ export const posts: BlogPost[] = [
 ];
 
 export function getAllPosts(): BlogPost[] {
-  // Newest first. Sort is stable, so posts sharing a date keep their order
-  // in the `posts` array above.
-  return [...posts].sort((a, b) => b.date.localeCompare(a.date));
+  // Pinned posts first, then newest first. Sort is stable, so posts sharing
+  // a date (or both pinned/both unpinned) keep their order in the `posts`
+  // array above.
+  return [...posts].sort((a, b) => {
+    const pinDiff = Number(!!b.pinned) - Number(!!a.pinned);
+    return pinDiff !== 0 ? pinDiff : b.date.localeCompare(a.date);
+  });
 }
 
 export function getPost(slug: string): BlogPost | undefined {
