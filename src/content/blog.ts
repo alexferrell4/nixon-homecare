@@ -76,99 +76,80 @@ export const posts: BlogPost[] = [
     ],
     gallery: [
       {
-        src: "/blog/26th-anniversary-sponsors/sponsor-01.jpg",
-        alt: "De'Cordova Eyewear ad",
-        caption: "De'Cordova Eyewear",
-      },
-      {
-        src: "/blog/26th-anniversary-sponsors/sponsor-02.jpg",
-        alt: "The GM Survivor Network, a thank-you to Alisa Nwachokor, and EFI Compassionate Wellness Clinic",
-        caption: "The GM Survivor Network / EFI Compassionate Wellness Clinic",
-      },
-      {
-        src: "/blog/26th-anniversary-sponsors/sponsor-03.jpg",
-        alt: "Nixon Counseling Services ad",
-        caption: "Nixon Counseling Services",
-      },
-      {
-        src: "/blog/26th-anniversary-sponsors/sponsor-04.jpg",
-        alt: "Nixon Home Care Inc. services overview",
-        caption: "Nixon Home Care, Inc.",
-      },
-      {
-        src: "/blog/26th-anniversary-sponsors/sponsor-05.jpg",
-        alt: "Azteca Construction Inc. ad",
-        caption: "Azteca Construction Inc.",
-      },
-      {
-        src: "/blog/26th-anniversary-sponsors/sponsor-06.jpg",
-        alt: "A thank-you to the 26th Anniversary Brunch Board of Directors, and Behavioral Healthcare PLLC",
-        caption: "Board of Directors thank-you / Behavioral Healthcare, PLLC",
-      },
-      {
-        src: "/blog/26th-anniversary-sponsors/sponsor-07.jpg",
-        alt: "Home Bank / Home 24 Bank ad",
-        caption: "Home Bank",
-      },
-      {
-        src: "/blog/26th-anniversary-sponsors/sponsor-08.jpg",
-        alt: "Ortegon Prosthodontics ad",
-        caption: "Ortegon Prosthodontics",
-      },
-      {
-        src: "/blog/26th-anniversary-sponsors/sponsor-09.jpg",
-        alt: "Konnecting the Dots Developmental Institute ad",
-        caption: "Konnecting the Dots Developmental Institute",
-      },
-      {
-        src: "/blog/26th-anniversary-sponsors/sponsor-10.jpg",
-        alt: "In loving memory of Bernice Adassa Rose, from the Rose family",
-        caption: "In loving memory of Bernice Adassa Rose",
-      },
-      {
-        src: "/blog/26th-anniversary-sponsors/sponsor-11.jpg",
-        alt: "Sipping PositiviTEA ad",
-        caption: "Sipping PositiviTEA",
-      },
-      {
-        src: "/blog/26th-anniversary-sponsors/sponsor-12.jpg",
-        alt: "Behavioral Hospital of Bellaire ad",
-        caption: "Behavioral Hospital of Bellaire",
-      },
-      {
-        src: "/blog/26th-anniversary-sponsors/sponsor-13.jpg",
-        alt: "Southern Hospice and Palliative Care Inc. ad",
-        caption: "Southern Hospice and Palliative Care Inc.",
-      },
-      {
-        src: "/blog/26th-anniversary-sponsors/sponsor-14.jpg",
-        alt: "Black Resource Group ad",
-        caption: "Black Resource Group",
-      },
-      {
-        src: "/blog/26th-anniversary-sponsors/sponsor-15.jpg",
-        alt: "CYS Consulting congratulations ad",
-        caption: "CYS Consulting",
-      },
-      {
-        src: "/blog/26th-anniversary-sponsors/sponsor-16.jpg",
-        alt: "Priority Office Automation ad",
-        caption: "Priority Office Automation",
-      },
-      {
-        src: "/blog/26th-anniversary-sponsors/sponsor-17.jpg",
-        alt: "Nixon Signature Estates now leasing ad",
-        caption: "Nixon Signature Estates",
-      },
-      {
         src: "/blog/26th-anniversary-sponsors/sponsor-18.jpg",
         alt: "White Insurance & Associates ad",
-        caption: "White Insurance & Associates",
       },
       {
         src: "/blog/26th-anniversary-sponsors/sponsor-19.jpg",
         alt: "Premium Hands Home Health Skilled Nursing Care, and H.F. Tech Consulting",
-        caption: "Premium Hands Home Health / H.F. Tech Consulting",
+      },
+      {
+        src: "/blog/26th-anniversary-sponsors/sponsor-01.jpg",
+        alt: "De'Cordova Eyewear ad",
+      },
+      {
+        src: "/blog/26th-anniversary-sponsors/sponsor-02.jpg",
+        alt: "The GM Survivor Network, a thank-you to Alisa Nwachokor, and EFI Compassionate Wellness Clinic",
+      },
+      {
+        src: "/blog/26th-anniversary-sponsors/sponsor-03.jpg",
+        alt: "Nixon Counseling Services ad",
+      },
+      {
+        src: "/blog/26th-anniversary-sponsors/sponsor-04.jpg",
+        alt: "Nixon Home Care Inc. services overview",
+      },
+      {
+        src: "/blog/26th-anniversary-sponsors/sponsor-05.jpg",
+        alt: "Azteca Construction Inc. ad",
+      },
+      {
+        src: "/blog/26th-anniversary-sponsors/sponsor-06.jpg",
+        alt: "A thank-you to the 26th Anniversary Brunch Board of Directors, and Behavioral Healthcare PLLC",
+      },
+      {
+        src: "/blog/26th-anniversary-sponsors/sponsor-07.jpg",
+        alt: "Home Bank / Home 24 Bank ad",
+      },
+      {
+        src: "/blog/26th-anniversary-sponsors/sponsor-08.jpg",
+        alt: "Ortegon Prosthodontics ad",
+      },
+      {
+        src: "/blog/26th-anniversary-sponsors/sponsor-09.jpg",
+        alt: "Konnecting the Dots Developmental Institute ad",
+      },
+      {
+        src: "/blog/26th-anniversary-sponsors/sponsor-10.jpg",
+        alt: "In loving memory of Bernice Adassa Rose, from the Rose family",
+      },
+      {
+        src: "/blog/26th-anniversary-sponsors/sponsor-11.jpg",
+        alt: "Sipping PositiviTEA ad",
+      },
+      {
+        src: "/blog/26th-anniversary-sponsors/sponsor-12.jpg",
+        alt: "Behavioral Hospital of Bellaire ad",
+      },
+      {
+        src: "/blog/26th-anniversary-sponsors/sponsor-13.jpg",
+        alt: "Southern Hospice and Palliative Care Inc. ad",
+      },
+      {
+        src: "/blog/26th-anniversary-sponsors/sponsor-14.jpg",
+        alt: "Black Resource Group ad",
+      },
+      {
+        src: "/blog/26th-anniversary-sponsors/sponsor-15.jpg",
+        alt: "CYS Consulting congratulations ad",
+      },
+      {
+        src: "/blog/26th-anniversary-sponsors/sponsor-16.jpg",
+        alt: "Priority Office Automation ad",
+      },
+      {
+        src: "/blog/26th-anniversary-sponsors/sponsor-17.jpg",
+        alt: "Nixon Signature Estates now leasing ad",
       },
     ],
     galleryAutoplay: true,
