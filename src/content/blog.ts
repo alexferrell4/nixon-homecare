@@ -76,80 +76,88 @@ export const posts: BlogPost[] = [
     ],
     gallery: [
       {
-        src: "/blog/26th-anniversary-sponsors/sponsor-18.jpg",
-        alt: "White Insurance & Associates ad",
+        src: "/blog/26th-anniversary-sponsors/slide-01.jpg",
+        alt: "Nixon Home Care 26th Anniversary Booklet cover",
       },
       {
-        src: "/blog/26th-anniversary-sponsors/sponsor-19.jpg",
-        alt: "Premium Hands Home Health Skilled Nursing Care, and H.F. Tech Consulting",
+        src: "/blog/26th-anniversary-sponsors/slide-02.jpg",
+        alt: "A letter to community members, partners, and friends from Nixon Home Care CEO Debora Nixon",
       },
       {
-        src: "/blog/26th-anniversary-sponsors/sponsor-01.jpg",
+        src: "/blog/26th-anniversary-sponsors/slide-03.jpg",
         alt: "De'Cordova Eyewear ad",
       },
       {
-        src: "/blog/26th-anniversary-sponsors/sponsor-02.jpg",
+        src: "/blog/26th-anniversary-sponsors/slide-04.jpg",
         alt: "The GM Survivor Network, a thank-you to Alisa Nwachokor, and EFI Compassionate Wellness Clinic",
       },
       {
-        src: "/blog/26th-anniversary-sponsors/sponsor-03.jpg",
+        src: "/blog/26th-anniversary-sponsors/slide-05.jpg",
         alt: "Nixon Counseling Services ad",
       },
       {
-        src: "/blog/26th-anniversary-sponsors/sponsor-04.jpg",
+        src: "/blog/26th-anniversary-sponsors/slide-06.jpg",
         alt: "Nixon Home Care Inc. services overview",
       },
       {
-        src: "/blog/26th-anniversary-sponsors/sponsor-05.jpg",
+        src: "/blog/26th-anniversary-sponsors/slide-07.jpg",
         alt: "Azteca Construction Inc. ad",
       },
       {
-        src: "/blog/26th-anniversary-sponsors/sponsor-06.jpg",
-        alt: "A thank-you to the 26th Anniversary Brunch Board of Directors, and Behavioral Healthcare PLLC",
+        src: "/blog/26th-anniversary-sponsors/slide-08.jpg",
+        alt: "A thank-you to the Board of Directors, and Behavioral Healthcare PLLC",
       },
       {
-        src: "/blog/26th-anniversary-sponsors/sponsor-07.jpg",
-        alt: "Home Bank / Home 24 Bank ad",
+        src: "/blog/26th-anniversary-sponsors/slide-09.jpg",
+        alt: "Home Bank ad",
       },
       {
-        src: "/blog/26th-anniversary-sponsors/sponsor-08.jpg",
+        src: "/blog/26th-anniversary-sponsors/slide-10.jpg",
         alt: "Ortegon Prosthodontics ad",
       },
       {
-        src: "/blog/26th-anniversary-sponsors/sponsor-09.jpg",
+        src: "/blog/26th-anniversary-sponsors/slide-11.jpg",
         alt: "Konnecting the Dots Developmental Institute ad",
       },
       {
-        src: "/blog/26th-anniversary-sponsors/sponsor-10.jpg",
+        src: "/blog/26th-anniversary-sponsors/slide-12.jpg",
         alt: "In loving memory of Bernice Adassa Rose, from the Rose family",
       },
       {
-        src: "/blog/26th-anniversary-sponsors/sponsor-11.jpg",
+        src: "/blog/26th-anniversary-sponsors/slide-13.jpg",
         alt: "Sipping PositiviTEA ad",
       },
       {
-        src: "/blog/26th-anniversary-sponsors/sponsor-12.jpg",
+        src: "/blog/26th-anniversary-sponsors/slide-14.jpg",
         alt: "Behavioral Hospital of Bellaire ad",
       },
       {
-        src: "/blog/26th-anniversary-sponsors/sponsor-13.jpg",
+        src: "/blog/26th-anniversary-sponsors/slide-15.jpg",
         alt: "Southern Hospice and Palliative Care Inc. ad",
       },
       {
-        src: "/blog/26th-anniversary-sponsors/sponsor-14.jpg",
+        src: "/blog/26th-anniversary-sponsors/slide-16.jpg",
         alt: "Black Resource Group ad",
       },
       {
-        src: "/blog/26th-anniversary-sponsors/sponsor-15.jpg",
+        src: "/blog/26th-anniversary-sponsors/slide-17.jpg",
         alt: "CYS Consulting congratulations ad",
       },
       {
-        src: "/blog/26th-anniversary-sponsors/sponsor-16.jpg",
+        src: "/blog/26th-anniversary-sponsors/slide-18.jpg",
         alt: "Priority Office Automation ad",
       },
       {
-        src: "/blog/26th-anniversary-sponsors/sponsor-17.jpg",
+        src: "/blog/26th-anniversary-sponsors/slide-19.jpg",
         alt: "Nixon Signature Estates now leasing ad",
+      },
+      {
+        src: "/blog/26th-anniversary-sponsors/slide-20.jpg",
+        alt: "White Insurance & Associates ad",
+      },
+      {
+        src: "/blog/26th-anniversary-sponsors/slide-21.jpg",
+        alt: "Premium Hands Home Health Skilled Nursing Care, and H.F. Tech Consulting",
       },
     ],
     galleryAutoplay: true,
