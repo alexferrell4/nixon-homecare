@@ -21,12 +21,14 @@ export async function generateMetadata({
   const { slug } = await params;
   const post = getPost(slug);
   if (!post) return { title: "Post not found | Nixon Home Care" };
+  const title = post.seo?.title ?? `${post.title} | Nixon Home Care`;
+  const description = post.seo?.description ?? post.excerpt;
   return {
-    title: `${post.title} | Nixon Home Care`,
-    description: post.excerpt,
+    title,
+    description,
     openGraph: post.cover
-      ? { title: post.title, description: post.excerpt, images: [post.cover] }
-      : { title: post.title, description: post.excerpt },
+      ? { title, description, images: [post.cover] }
+      : { title, description },
   };
 }
 
@@ -43,6 +45,14 @@ export default async function BlogPostPage({
     <div className="flex min-h-screen flex-col">
       <Header />
       <main className="flex-1 bg-background pt-28 pb-24">
+        {post.schema ? (
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify(post.schema).replace(/</g, "\\u003c"),
+            }}
+          />
+        ) : null}
         <article className="mx-auto max-w-3xl px-6">
           <Link
             href="/blog"
@@ -80,7 +90,7 @@ export default async function BlogPostPage({
             <div className="relative mt-8 aspect-[16/9] w-full overflow-hidden rounded-lg bg-muted">
               <Image
                 src={post.cover}
-                alt=""
+                alt={post.coverAlt ?? ""}
                 fill
                 sizes="(max-width: 768px) 100vw, 768px"
                 className="object-cover"
