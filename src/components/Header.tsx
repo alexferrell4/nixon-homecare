@@ -34,7 +34,7 @@ export default function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-8">
+          <nav className="hidden xl:flex items-center gap-8">
             {navLinks.map((link) => (
               <Link
                 key={link.label}
@@ -46,13 +46,13 @@ export default function Header() {
             ))}
           </nav>
 
-          <div className="hidden lg:flex items-center gap-4">
+          <div className="hidden xl:flex items-center gap-4 ml-8">
             <a
               href="tel:713-633-4700"
               className="flex items-center gap-2 text-white/90 hover:text-accent transition-colors"
             >
-              <Phone className="w-4 h-4" />
-              <span className="font-medium">(713) 633-4700</span>
+              <Phone className="w-4 h-4 shrink-0" />
+              <span className="font-medium whitespace-nowrap">(713) 633-4700</span>
             </a>
             <Link
               href="/#contact"
@@ -65,7 +65,7 @@ export default function Header() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden p-2 text-white"
+            className="xl:hidden p-2 text-white"
             aria-label="Toggle menu"
           >
             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -80,7 +80,7 @@ export default function Header() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden bg-primary border-t border-white/10"
+            className="xl:hidden bg-primary border-t border-white/10"
           >
             <nav className="flex flex-col px-6 py-4">
               {navLinks.map((link) => (
