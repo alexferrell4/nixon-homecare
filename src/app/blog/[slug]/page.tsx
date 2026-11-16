@@ -192,6 +192,47 @@ export default async function BlogPostPage({
               <VideoEmbed video={post.video} />
             </section>
           ) : null}
+
+          {post.links && post.links.length > 0 ? (
+            <section
+              className="mt-12 border-t border-border pt-8"
+              aria-labelledby="references-heading"
+            >
+              <h2
+                id="references-heading"
+                className="mb-4 text-sm font-medium uppercase tracking-widest text-accent"
+              >
+                References
+              </h2>
+              <ul className="space-y-3">
+                {post.links.map((link) => (
+                  <li key={link.url}>
+                    <a
+                      href={link.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-start gap-2 font-medium text-primary hover:underline"
+                    >
+                      <span>
+                        {link.label}
+                        {link.source ? (
+                          <span className="font-normal text-muted-foreground">
+                            {" "}
+                            ({link.source})
+                          </span>
+                        ) : null}
+                        <span className="sr-only"> (opens in a new tab)</span>
+                      </span>
+                      <ExternalLink
+                        className="mt-1 h-4 w-4 shrink-0"
+                        aria-hidden="true"
+                      />
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ) : null}
         </article>
       </main>
       <Footer />

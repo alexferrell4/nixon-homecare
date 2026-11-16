@@ -63,13 +63,102 @@ export type BlogPost = {
   albumUrl?: string;
   /** Label for the albumUrl link. Defaults to "View the full photo album" */
   albumLabel?: string;
+  /** Optional reference links (e.g. press coverage), listed at the bottom of the post */
+  links?: { label: string; url: string; source?: string }[];
 };
 
 export const posts: BlogPost[] = [
   {
+    slug: "nse-ribbon-cutting-recap",
+    title: "Nixon Signature Estates Cuts the Ribbon on Veterans Day",
+    pinned: true,
+    date: "2026-11-16",
+    author: "Nixon Home Care",
+    excerpt:
+      "On Veterans Day, Wednesday, November 11, we officially cut the ribbon at Nixon Signature Estates. Here's a look back at the morning, with photos.",
+    cover: "/blog/nse-ribbon-cutting-recap/photo-01.jpg",
+    coverAlt:
+      "Debora Nixon holds oversized gold scissors at the ribbon while a speaker addresses guests, with dignitaries lined up behind them outside Nixon Signature Estates",
+    seo: {
+      title: "Veterans Day Ribbon Cutting Recap | Nixon Signature Estates",
+      description:
+        "Photos and highlights from the Nixon Signature Estates ribbon cutting on Veterans Day, Nov. 11, 2026, at 6710 Bleker St. in Houston.",
+    },
+    body: [
+      "On Wednesday, November 11, 2026, Veterans Day, we officially cut the ribbon at Nixon Signature Estates. Thank you to everyone who joined us at 6710 Bleker St. Your presence made the morning one we will not forget.",
+      "The program opened with welcome remarks from JoAnn Goodie Charles and an opening prayer from Claude Lewis. Our founder, Debora A. Nixon, then shared words about Nixon Signature Estates, an Intentional Living community. We were also honored to hear special remarks from Council Member Willie Davis.",
+      "Then came the moment we had been working toward. Ms. Nixon, joined by our team, invited dignitaries, and chamber representatives, cut the ribbon and made it official. Afterward, guests toured the first floor and stayed for refreshments.",
+      "Holding this celebration on Veterans Day meant a great deal to us. To every veteran and military family, and to everyone who has supported this home along the way, thank you. Nixon Signature Estates is home to Nixon Assisted Living and Nixon Independent Living. If you would like to schedule a tour, call (713) 419-2653.",
+      "In other news, Ms. Nixon was interviewed for a Forbes article on eldercare published this past week. You can find the article linked below.",
+    ],
+    gallery: [
+      {
+        src: "/blog/nse-ribbon-cutting-recap/photo-01.jpg",
+        alt: "Debora Nixon holds oversized gold scissors at the ribbon while a speaker addresses guests, with dignitaries lined up behind them",
+      },
+      {
+        src: "/blog/nse-ribbon-cutting-recap/photo-02.jpg",
+        alt: "Debora Nixon holds the oversized gold scissors at the center of a group photo with the Nixon team, guests, and dignitaries",
+      },
+      {
+        src: "/blog/nse-ribbon-cutting-recap/photo-03.jpg",
+        alt: "The ribbon cutting program on an easel outside Nixon Signature Estates",
+      },
+      {
+        src: "/blog/nse-ribbon-cutting-recap/photo-04.jpg",
+        alt: "Debora Nixon pointing upward as she speaks during the ribbon cutting program",
+      },
+      {
+        src: "/blog/nse-ribbon-cutting-recap/photo-05.jpg",
+        alt: "Debora Nixon speaking with a hand to her collar at Nixon Signature Estates",
+      },
+      {
+        src: "/blog/nse-ribbon-cutting-recap/photo-06.jpg",
+        alt: "Debora Nixon laughs as a guest walks by in the Nixon Signature Estates courtyard, folding chairs in the foreground",
+      },
+    ],
+    links: [
+      {
+        label:
+          "Explainer: How Many Times Does the Same Taxpayer Pay for America's Eldercare Crisis?",
+        source: "Forbes, November 14, 2026",
+        url: "https://www.forbes.com/sites/christinecarter/2026/11/14/explainer-how-many-times-does-the-same-taxpayer-pay-for-americas-eldercare-crisis/",
+      },
+    ],
+  },
+  {
+    slug: "debora-nixon-forbes-eldercare",
+    title: "Debora Nixon Featured in Forbes on America's Eldercare Crisis",
+    pinned: true,
+    date: "2026-11-16",
+    author: "Nixon Home Care",
+    excerpt:
+      "Our founder, Debora Nixon, was interviewed for a new Forbes explainer on who pays for America's eldercare crisis, and how many times.",
+    cover: "/blog/forbes-eldercare/cover.jpg",
+    coverAlt: "Debora Nixon speaking outdoors at Nixon Signature Estates",
+    seo: {
+      title: "Debora Nixon in Forbes: America's Eldercare Crisis | Nixon Home Care",
+      description:
+        "Nixon Home Care founder Debora Nixon shares her perspective in a Forbes explainer by Christine Carter on the cost of America's eldercare crisis.",
+    },
+    body: [
+      "We are proud to share that our founder, Debora Nixon, was interviewed for a new Forbes article by contributor Christine Carter, published November 14, 2026.",
+      "The piece is an explainer on America's eldercare crisis and asks a pointed question: how many times does the same taxpayer end up paying for it?",
+      "Ms. Nixon's perspective appears in the section titled \"Where the money goes,\" drawing on 26 years of caring for seniors and families in Houston through Nixon Home Care.",
+      "We are grateful to Forbes for including her voice in this important conversation. Read the full article at the link below.",
+    ],
+    links: [
+      {
+        label:
+          "Explainer: How Many Times Does the Same Taxpayer Pay for America's Eldercare Crisis?",
+        source: "Forbes, November 14, 2026",
+        url: "https://www.forbes.com/sites/christinecarter/2026/11/14/explainer-how-many-times-does-the-same-taxpayer-pay-for-americas-eldercare-crisis/",
+      },
+    ],
+  },
+  {
     slug: "nse-ribbon-cutting",
     title: "Join Us for the Nixon Signature Estates Ribbon Cutting",
-    pinned: true,
     date: "2026-10-27",
     author: "Nixon Home Care",
     excerpt:
