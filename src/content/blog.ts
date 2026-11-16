@@ -97,12 +97,20 @@ export const posts: BlogPost[] = [
         alt: "Debora Nixon holds oversized gold scissors at the ribbon while a speaker addresses guests, with dignitaries lined up behind them",
       },
       {
+        src: "/blog/nse-ribbon-cutting-recap/photo-07.jpg",
+        alt: "Team members, guests, and dignitaries line up behind the ribbon outside Nixon Signature Estates",
+      },
+      {
         src: "/blog/nse-ribbon-cutting-recap/photo-02.jpg",
         alt: "Debora Nixon holds the oversized gold scissors at the center of a group photo with the Nixon team, guests, and dignitaries",
       },
       {
         src: "/blog/nse-ribbon-cutting-recap/photo-03.jpg",
         alt: "The ribbon cutting program on an easel outside Nixon Signature Estates",
+      },
+      {
+        src: "/blog/nse-ribbon-cutting-recap/photo-08.jpg",
+        alt: "A woman in a green dress holds her notes as she prepares to address guests in front of the Nixon Signature Estates building",
       },
       {
         src: "/blog/nse-ribbon-cutting-recap/photo-04.jpg",
@@ -113,8 +121,32 @@ export const posts: BlogPost[] = [
         alt: "Debora Nixon speaking with a hand to her collar at Nixon Signature Estates",
       },
       {
+        src: "/blog/nse-ribbon-cutting-recap/photo-09.jpg",
+        alt: "Debora Nixon speaking animatedly to guests outside Nixon Signature Estates",
+      },
+      {
+        src: "/blog/nse-ribbon-cutting-recap/photo-10.jpg",
+        alt: "Debora Nixon speaking alongside two Nixon team members",
+      },
+      {
         src: "/blog/nse-ribbon-cutting-recap/photo-06.jpg",
         alt: "Debora Nixon laughs as a guest walks by in the Nixon Signature Estates courtyard, folding chairs in the foreground",
+      },
+      {
+        src: "/blog/nse-ribbon-cutting-recap/photo-11.jpg",
+        alt: "Debora Nixon smiles arm in arm with an attendee outside Nixon Signature Estates",
+      },
+      {
+        src: "/blog/nse-ribbon-cutting-recap/photo-12.jpg",
+        alt: "Debora Nixon poses with two attendees outside Nixon Signature Estates",
+      },
+      {
+        src: "/blog/nse-ribbon-cutting-recap/photo-13.jpg",
+        alt: "Three attendees pose together outside Nixon Signature Estates",
+      },
+      {
+        src: "/blog/nse-ribbon-cutting-recap/photo-14.jpg",
+        alt: "Debora Nixon poses with an attendee outside Nixon Signature Estates",
       },
     ],
     links: [
