@@ -88,7 +88,7 @@ export const posts: BlogPost[] = [
       "On Wednesday, November 11, 2026, Veterans Day, we officially cut the ribbon at Nixon Signature Estates. Thank you to everyone who joined us at 6710 Bleker St. Your presence made the morning one we will not forget.",
       "The program opened with welcome remarks from JoAnn Goodie Charles and an opening prayer from Claude Lewis. Our founder, Debora A. Nixon, then shared words about Nixon Signature Estates, an Intentional Living community. We were also honored to hear special remarks from Council Member Willie Davis.",
       "Then came the moment we had been working toward. Ms. Nixon, joined by our team, invited dignitaries, and chamber representatives, cut the ribbon and made it official. Afterward, guests toured the first floor and stayed for refreshments.",
-      "Holding this celebration on Veterans Day meant a great deal to us. To every veteran and military family, and to everyone who has supported this home along the way, thank you. Nixon Signature Estates is home to Nixon Assisted Living and Nixon Independent Living. If you would like to schedule a tour, call (713) 419-2653.",
+      "Holding this celebration on Veterans Day meant a great deal to us. To every veteran and military family, and to everyone who has supported this home along the way, thank you. If you would like to schedule a tour, call (713) 419-2653.",
       "In other news, Ms. Nixon was interviewed for a Forbes article on eldercare published this past week. You can find the article linked below.",
     ],
     gallery: [
@@ -135,7 +135,7 @@ export const posts: BlogPost[] = [
     excerpt:
       "Our founder, Debora Nixon, was interviewed for a new Forbes explainer on who pays for America's eldercare crisis, and how many times.",
     cover: "/blog/forbes-eldercare/cover.jpg",
-    coverAlt: "Debora Nixon speaking outdoors at Nixon Signature Estates",
+    coverAlt: "Debora Nixon smiling in the Nixon Signature Estates courtyard as a guest walks by",
     seo: {
       title: "Debora Nixon in Forbes: America's Eldercare Crisis | Nixon Home Care",
       description:
